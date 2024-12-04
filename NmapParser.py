@@ -5,9 +5,22 @@ from Edge import Edge
 
 
 class NmapParser:
+    """
+    Nmap XML 数据解析器。
+
+    该类用于解析 Nmap 生成的 XML 文件，并提取网络节点和边的信息。
+    提取的信息包括节点的属性、开放端口列表，以及边的类型、协议和层级。
+    """
+
     def __init__(self):
         """
         初始化 NmapParser。
+
+        属性:
+            - nodes (List[Node]): 存储解析出的 Node 对象。
+            - edges (List[Edge]): 存储解析出的 Edge 对象。
+            - added_nodes (set[int]): 存储已添加的 Node 对象的哈希值，用于去重。
+            - added_edges (set[int]): 存储已添加的 Edge 对象的哈希值，用于去重。
         """
         self.nodes: list[Node] = []  # 存储 Node 实例的列表
         self.edges: list[Edge] = []  # 存储 Edge 实例的列表

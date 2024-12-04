@@ -2,6 +2,37 @@ from typing import List, Dict, Optional
 
 
 class Node:
+    """
+    表示网络中的一个节点。
+
+    该类用于封装网络节点的相关信息，包括节点的唯一标识符、类型、状态、域名、MAC 地址、开放端口列表等。
+
+    属性:
+        - node_id (str): 节点的唯一标识符，通常为 IP 地址。
+        - node_type (str): 节点的类型，例如 "device"、"router"。
+        - state (str): 节点的状态，例如 "up" 或 "down"。
+        - fqdn (Optional[str]): 完全限定域名（FQDN），可以为 None。
+        - reverse_dns (str): 节点的反向 DNS 名称。
+        - mac_address (str): 节点的 MAC 地址。
+        - vendor (str): 节点的设备供应商名称，例如 "Cisco"。
+        - open_ports (List[Dict[str, Optional[str]]]): 节点的开放端口列表，格式为：
+            [
+                {
+                    "port": int,
+                    "protocol": str,
+                    "service": str,
+                    "version": Optional[str]
+                },
+                ...
+            ]
+        - os (Optional[str]): 节点的操作系统信息，可以为 None。
+
+    方法:
+        - to_dict(): 将 Node 对象转换为字典格式，用于 JSON 序列化。
+        - __hash__(): 计算 Node 对象的哈希值，用于在集合中唯一标识节点。
+        - __eq__(): 比较两个 Node 对象是否相等。
+    """
+
     def __init__(self, node_id: str, node_type: str, state: str, fqdn: Optional[str], reverse_dns: str,
                  mac_address: str, vendor: str, open_ports: List[Dict[str, Optional[str]]], os: Optional[str]):
         """
