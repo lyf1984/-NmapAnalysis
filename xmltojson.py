@@ -22,18 +22,15 @@ class NmapParser:
             for host in root.findall("host"):
                 self._parse_host(host)
 
-            return {"nodes": self.nodes, "edges": self.edges}
-
         except ET.ParseError as e:
             print(f"XML 解析错误: {e}")
-            return None
         except FileNotFoundError:
             print(f"文件未找到: {file_path}")
-            return None
 
-    def save_to_json(self, data, output_file):
+    def save_to_json(self, output_file):
         """将数据保存为 JSON 文件"""
         try:
+            data = {"nodes": self.nodes, "edges": self.edges}
             with open(output_file, "w") as f:
                 json.dump(data, f, indent=4)
             print(f"数据成功保存到 {output_file}")
@@ -123,34 +120,36 @@ class NmapParser:
         """解析边信息"""
         trace = host.find("trace")
         if trace is not None:
-            prev_hop = None
+            prev_hop = self.localhost_ip  # 初始值为 localhost
             for hop in trace.findall("hop"):
                 hop_ip = hop.get("ipaddr")
-                if hop_ip and (prev_hop, hop_ip) not in self.added_edges:
-                    self.edges.append({
-                        "from_node": prev_hop if prev_hop else self.localhost_ip,
-                        "to_node": hop_ip,
-                        "edge_type": "traceroute",
-                        "protocol": "ICMP",
-                        "layer": "Layer 3"
-                    })
-                    self.added_edges.add((prev_hop, hop_ip))
-                    prev_hop = hop_ip
+                if hop_ip:  # 如果 hop IP 存在
+                    edge = (prev_hop, hop_ip)
+                    if edge not in self.added_edges:
+                        self.edges.append({
+                            "from_node": prev_hop,
+                            "to_node": hop_ip,
+                            "edge_type": "traceroute",
+                            "protocol": "ICMP",
+                            "layer": "Layer 3"
+                        })
+                        self.added_edges.add(edge)
+                    prev_hop = hop_ip  # 更新上一跳为当前 hop
 
 
 def main():
     # 输入 XML 文件路径
-    input_file = "./xml/126.xml"  # 替换为实际的 nmap 扫描结果文件路径
-    output_file = "new.json"  # 输出 JSON 文件名
+    input_file = "./xml/189.xml"  # 替换为实际的 nmap 扫描结果文件路径
+    output_file = "output.json"  # 输出 JSON 文件名
 
     # 创建解析器实例
     parser = NmapParser()
 
     # 解析 XML 并提取数据
-    network_data = parser.parse(input_file)
-    if network_data:
-        # 保存为 JSON
-        parser.save_to_json(network_data, output_file)
+    parser.parse(input_file)
+
+    # 保存为 JSON
+    parser.save_to_json(output_file)
 
 
 if __name__ == "__main__":
