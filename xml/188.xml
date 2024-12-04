@@ -1,0 +1,1796 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Wed Dec  4 09:00:02 2024 as: nmap -oX big0.xml -T2 -A -sV -O -&#45;traceroute 10.12.188.1/24 -->
+<nmaprun scanner="nmap" args="nmap -oX big0.xml -T2 -A -sV -O -&#45;traceroute 10.12.188.1/24" start="1733274002" startstr="Wed Dec  4 09:00:02 2024" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1000" services="1,3-4,6-7,9,13,17,19-26,30,32-33,37,42-43,49,53,70,79-85,88-90,99-100,106,109-111,113,119,125,135,139,143-144,146,161,163,179,199,211-212,222,254-256,259,264,280,301,306,311,340,366,389,406-407,416-417,425,427,443-445,458,464-465,481,497,500,512-515,524,541,543-545,548,554-555,563,587,593,616-617,625,631,636,646,648,666-668,683,687,691,700,705,711,714,720,722,726,749,765,777,783,787,800-801,808,843,873,880,888,898,900-903,911-912,981,987,990,992-993,995,999-1002,1007,1009-1011,1021-1100,1102,1104-1108,1110-1114,1117,1119,1121-1124,1126,1130-1132,1137-1138,1141,1145,1147-1149,1151-1152,1154,1163-1166,1169,1174-1175,1183,1185-1187,1192,1198-1199,1201,1213,1216-1218,1233-1234,1236,1244,1247-1248,1259,1271-1272,1277,1287,1296,1300-1301,1309-1311,1322,1328,1334,1352,1417,1433-1434,1443,1455,1461,1494,1500-1501,1503,1521,1524,1533,1556,1580,1583,1594,1600,1641,1658,1666,1687-1688,1700,1717-1721,1723,1755,1761,1782-1783,1801,1805,1812,1839-1840,1862-1864,1875,1900,1914,1935,1947,1971-1972,1974,1984,1998-2010,2013,2020-2022,2030,2033-2035,2038,2040-2043,2045-2049,2065,2068,2099-2100,2103,2105-2107,2111,2119,2121,2126,2135,2144,2160-2161,2170,2179,2190-2191,2196,2200,2222,2251,2260,2288,2301,2323,2366,2381-2383,2393-2394,2399,2401,2492,2500,2522,2525,2557,2601-2602,2604-2605,2607-2608,2638,2701-2702,2710,2717-2718,2725,2800,2809,2811,2869,2875,2909-2910,2920,2967-2968,2998,3000-3001,3003,3005-3007,3011,3013,3017,3030-3031,3052,3071,3077,3128,3168,3211,3221,3260-3261,3268-3269,3283,3300-3301,3306,3322-3325,3333,3351,3367,3369-3372,3389-3390,3404,3476,3493,3517,3527,3546,3551,3580,3659,3689-3690,3703,3737,3766,3784,3800-3801,3809,3814,3826-3828,3851,3869,3871,3878,3880,3889,3905,3914,3918,3920,3945,3971,3986,3995,3998,4000-4006,4045,4111,4125-4126,4129,4224,4242,4279,4321,4343,4443-4446,4449,4550,4567,4662,4848,4899-4900,4998,5000-5004,5009,5030,5033,5050-5051,5054,5060-5061,5080,5087,5100-5102,5120,5190,5200,5214,5221-5222,5225-5226,5269,5280,5298,5357,5405,5414,5431-5432,5440,5500,5510,5544,5550,5555,5560,5566,5631,5633,5666,5678-5679,5718,5730,5800-5802,5810-5811,5815,5822,5825,5850,5859,5862,5877,5900-5904,5906-5907,5910-5911,5915,5922,5925,5950,5952,5959-5963,5987-5989,5998-6007,6009,6025,6059,6100-6101,6106,6112,6123,6129,6156,6346,6389,6502,6510,6543,6547,6565-6567,6580,6646,6666-6669,6689,6692,6699,6779,6788-6789,6792,6839,6881,6901,6969,7000-7002,7004,7007,7019,7025,7070,7100,7103,7106,7200-7201,7402,7435,7443,7496,7512,7625,7627,7676,7741,7777-7778,7800,7911,7920-7921,7937-7938,7999-8002,8007-8011,8021-8022,8031,8042,8045,8080-8090,8093,8099-8100,8180-8181,8192-8194,8200,8222,8254,8290-8292,8300,8333,8383,8400,8402,8443,8500,8600,8649,8651-8652,8654,8701,8800,8873,8888,8899,8994,9000-9003,9009-9011,9040,9050,9071,9080-9081,9090-9091,9099-9103,9110-9111,9200,9207,9220,9290,9415,9418,9485,9500,9502-9503,9535,9575,9593-9595,9618,9666,9876-9878,9898,9900,9917,9929,9943-9944,9968,9998-10004,10009-10010,10012,10024-10025,10082,10180,10215,10243,10566,10616-10617,10621,10626,10628-10629,10778,11110-11111,11967,12000,12174,12265,12345,13456,13722,13782-13783,14000,14238,14441-14442,15000,15002-15004,15660,15742,16000-16001,16012,16016,16018,16080,16113,16992-16993,17877,17988,18040,18101,18988,19101,19283,19315,19350,19780,19801,19842,20000,20005,20031,20221-20222,20828,21571,22939,23502,24444,24800,25734-25735,26214,27000,27352-27353,27355-27356,27715,28201,30000,30718,30951,31038,31337,32768-32785,33354,33899,34571-34573,35500,38292,40193,40911,41511,42510,44176,44442-44443,44501,45100,48080,49152-49161,49163,49165,49167,49175-49176,49400,49999-50003,50006,50300,50389,50500,50636,50800,51103,51493,52673,52822,52848,52869,54045,54328,55055-55056,55555,55600,56737-56738,57294,57797,58080,60020,60443,61532,61900,62078,63331,64623,64680,65000,65129,65389"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1733274620" endtime="1733304695"><status state="up" reason="echo-reply" reason_ttl="62"/>
+<address addr="10.12.188.2" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="997">
+<extrareasons reason="no-responses" count="996"/>
+<extrareasons reason="host-unreach" count="1"/>
+</extraports>
+<port protocol="tcp" portid="8888"><state state="closed" reason="reset" reason_ttl="61"/><service name="sun-answerbook" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10002"><state state="open" reason="syn-ack" reason_ttl="61"/><service name="ssh" product="OpenSSH" version="8.9p1 Ubuntu 3ubuntu0.10" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.9p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="10004"><state state="open" reason="syn-ack" reason_ttl="61"/><service name="ssh" product="OpenSSH" version="9.6p1 Debian 3" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:9.6p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="10002"/>
+<portused state="closed" proto="tcp" portid="8888"/>
+<osmatch name="Linux 2.6.32 - 2.6.35" accuracy="92" line="56133">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 - 2.6.39" accuracy="92" line="56230">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32" accuracy="89" line="54126">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 or 3.10" accuracy="89" line="56650">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:3.10</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.4" accuracy="89" line="67202">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:4.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.0" accuracy="88" line="66814">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:4.0</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.34" accuracy="88" line="56760">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:2.6.34</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 - 2.6.33" accuracy="87" line="56094">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="87"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.9 - 2.6.27" accuracy="87" line="59009">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="87"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.39" accuracy="85" line="57946">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="85"><cpe>cpe:/o:linux:linux_kernel:2.6.39</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="3886352" lastboot="Sun Oct 20 17:59:03 2024"/>
+<distance value="3"/>
+<tcpsequence index="200" difficulty="Good luck!" values="408C80A,D20FB001,DE03B0AF,482B6BFA,AAED626C,9458081C"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="E7881F4D,E788726B,E788C5B4,E789194E,E7896C22,E789BFB4"/>
+<trace port="8888" proto="tcp">
+<hop ttl="1" ipaddr="192.168.40.2" rtt="0.23" host="_gateway"/>
+<hop ttl="3" ipaddr="10.12.188.2" rtt="96.34"/>
+</trace>
+<times srtt="37865" rttvar="38580" to="400000"/>
+</host>
+<host starttime="1733274830" endtime="1733304695"><status state="up" reason="timestamp-reply" reason_ttl="62"/>
+<address addr="10.12.188.9" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="999"/>
+<extrareasons reason="host-unreach" count="1"/>
+</extraports>
+</ports>
+<os></os>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="192.168.40.2" rtt="0.23" host="_gateway"/>
+</trace>
+<times srtt="791" rttvar="496" to="400000"/>
+</host>
+<host starttime="1733274313" endtime="1733304695"><status state="up" reason="echo-reply" reason_ttl="62"/>
+<address addr="10.12.188.42" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="997">
+<extrareasons reason="no-responses" count="996"/>
+<extrareasons reason="host-unreach" count="1"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="60"/><service name="ssh" product="OpenSSH" version="8.9p1 Ubuntu 3ubuntu0.1" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.9p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="60"/><service name="http" product="nginx" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service><script id="http-robots.txt" output="57 disallowed entries (15 shown)&#xa;/ /autocomplete/users /autocomplete/projects /search &#xa;/admin /profile /dashboard /users /api/v* /help /s/ /-/profile &#xa;/-/ide/ /-/experiment /*/new"/><script id="http-title" output="Sign in \xC2\xB7 JiHu GitLab&#xa;Requested resource was http://10.12.188.42/users/sign_in"><elem key="title">Sign in \xC2\xB7 JiHu GitLab</elem>
+<elem key="redirect_url">http://10.12.188.42/users/sign_in</elem>
+</script><script id="http-trane-info" output="Problem with XML parsing of /evox/about"/></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="ms-wbt-server" product="Microsoft Terminal Services" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="rdp-ntlm-info" output="&#xa;  Target_Name: DESKTOP-31SHA13&#xa;  NetBIOS_Domain_Name: DESKTOP-31SHA13&#xa;  NetBIOS_Computer_Name: DESKTOP-31SHA13&#xa;  DNS_Domain_Name: DESKTOP-31SHA13&#xa;  DNS_Computer_Name: DESKTOP-31SHA13&#xa;  Product_Version: 10.0.19041&#xa;  System_Time: 2022-04-11T10:38:09+00:00"><elem key="Target_Name">DESKTOP-31SHA13</elem>
+<elem key="NetBIOS_Domain_Name">DESKTOP-31SHA13</elem>
+<elem key="NetBIOS_Computer_Name">DESKTOP-31SHA13</elem>
+<elem key="DNS_Domain_Name">DESKTOP-31SHA13</elem>
+<elem key="DNS_Computer_Name">DESKTOP-31SHA13</elem>
+<elem key="Product_Version">10.0.19041</elem>
+<elem key="System_Time">2022-04-11T10:38:09+00:00</elem>
+</script><script id="ssl-cert" output="Subject: commonName=DESKTOP-31SHA13&#xa;Not valid before: 2022-04-10T08:30:00&#xa;Not valid after:  2022-10-10T08:30:00"><table key="subject">
+<elem key="commonName">DESKTOP-31SHA13</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">DESKTOP-31SHA13</elem>
+</table>
+<table key="pubkey">
+<elem key="modulus">BIGNUM: 0x5c5646259688</elem>
+<elem key="exponent">BIGNUM: 0x5c5646259608</elem>
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">TLS Web Server Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2022-04-10T08:30:00</elem>
+<elem key="notAfter">2022-10-10T08:30:00</elem>
+</table>
+<elem key="md5">c6d189e61fbf283bab6bc5cd1cf129bb</elem>
+<elem key="sha1">0c77da6546606c95629ce254eed508249aad1b64</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC4jCCAcqgAwIBAgIQHtjkf3xnTq9DdRd5ORmiEDANBgkqhkiG9w0BAQsFADAa&#xa;MRgwFgYDVQQDEw9ERVNLVE9QLTMxU0hBMTMwHhcNMjIwNDEwMDgzMDAwWhcNMjIx&#xa;MDEwMDgzMDAwWjAaMRgwFgYDVQQDEw9ERVNLVE9QLTMxU0hBMTMwggEiMA0GCSqG&#xa;SIb3DQEBAQUAA4IBDwAwggEKAoIBAQDQtHQsW5VA0xXRzKIEZQM6IKkCv1p/aoEQ&#xa;9DkukLL73E3Cfy0pMG660q6RbuX0x6t6rmJffZUilnUNYTYPtikyxPok8QsXnJIy&#xa;u2GzwKtNLIeErSTBZeVbneL8N20DhJOEevuWgpUaoFFcogkkOkgc2lUtDmcc6La2&#xa;iCyMmtk+9pkxSfqyG61wqpQzDEKG5phc8Mb3KWra2hKU+/4HWMnTzxdvyrZTSbZv&#xa;U7QbN/qXT5yAu3FTLyqKJJJXKQvbweWjs2S8meAGUiyqenoe0CMTsEZYWqDTFK1A&#xa;z1Gsa+7huHTeFscOcFJJ9udTIhbNmeVxeYPmy8azO2BRljcDeQOFAgMBAAGjJDAi&#xa;MBMGA1UdJQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG9w0BAQsF&#xa;AAOCAQEAqxNRAVQViHiYK2cZgphMmZtKo3ylQlNx2RJHEUpxUCmWKRPDAbY1Cw+u&#xa;NLRU7BXRINZRwPSug77xaU91pXt7KoHT53kOAGfIWsvzJikFd1JYvyzO0soogTIy&#xa;9pBRTq0hg8fMxEdY5mijArmGXzUvp9AstOIymoEWVE/oDHA5nxBIpyNzvAgenkqc&#xa;vQM+ZUSgWFu1R0CYyVnq0BD1fvPwor4Nz2MwlQBeti7KPUM+A3WAi9yqfKrtolPR&#xa;CzSYlFPeJ7h75FmhcIs3T3KSHphLh69E0Y542QodeagNKZ7T8fOawxrcPvCc2lZL&#xa;G7sDytIJmNKOr2ETg7+8i6PUHDJcTA==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2022-04-11T10:39:33+00:00; -2y236d22h51m37s from scanner time."><elem key="delta">-83631097.0</elem>
+<elem key="date">2022-04-11T10:39:33+00:00</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<osmatch name="Linux 2.6.32 - 2.6.35" accuracy="92" line="56133">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 - 2.6.39" accuracy="92" line="56230">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32" accuracy="89" line="54126">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 or 3.10" accuracy="89" line="56650">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:3.10</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.4" accuracy="89" line="67202">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:4.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.34" accuracy="87" line="56760">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="87"><cpe>cpe:/o:linux:linux_kernel:2.6.34</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.18 - 2.6.22" accuracy="86" line="49721">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="86"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.39" accuracy="86" line="58000">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="86"><cpe>cpe:/o:linux:linux_kernel:2.6.39</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.22 - 2.6.36" accuracy="86" line="51668">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="86"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 - 2.6.33" accuracy="86" line="56094">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="86"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="474001" lastboot="Fri Nov 29 05:51:34 2024"/>
+<distance value="3"/>
+<tcpsequence index="201" difficulty="Good luck!" values="32040F2B,1E65F0DB,B066FDD8,1D41D2DC,DCA1F633,D0664FF6"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="1C23C43B,1C241779,1C246AB7,1C24BDF5,1C251133,1C256471"/>
+<hostscript><script id="clock-skew" output="mean: -967d22h51m37s, deviation: 0s, median: -967d22h51m37s"><elem key="count">2</elem>
+<elem key="mean">-83631097</elem>
+<elem key="median">-83631097</elem>
+<elem key="stddev">0</elem>
+</script></hostscript><trace port="3389" proto="tcp">
+<hop ttl="1" ipaddr="192.168.40.2" rtt="0.23" host="_gateway"/>
+<hop ttl="3" ipaddr="10.12.188.42" rtt="1.34"/>
+</trace>
+<times srtt="1404" rttvar="156" to="400000"/>
+</host>
+<host starttime="1733274028" endtime="1733304695"><status state="up" reason="syn-ack" reason_ttl="126"/>
+<address addr="10.12.188.66" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="997"/>
+<extrareasons reason="host-unreach" count="1"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="126"/><service name="http" product="Apache httpd" version="2.4.58" extrainfo="(Win64) OpenSSL/3.1.3 PHP/8.2.12" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.58</cpe></service><script id="http-server-header" output="Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12"><elem>Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12</elem>
+</script><script id="http-title" output="Welcome to XAMPP&#xa;Requested resource was http://10.12.188.66/dashboard/"><elem key="title">Welcome to XAMPP</elem>
+<elem key="redirect_url">http://10.12.188.66/dashboard/</elem>
+</script><script id="https-redirect" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="8888"><state state="open" reason="syn-ack" reason_ttl="126"/><service name="sun-answerbook" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<osmatch name="FreeBSD 6.2-RELEASE" accuracy="91" line="27364">
+<osclass type="general purpose" vendor="FreeBSD" osfamily="FreeBSD" osgen="6.X" accuracy="91"><cpe>cpe:/o:freebsd:freebsd:6.2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 10" accuracy="89" line="68986">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="10" accuracy="89"><cpe>cpe:/o:microsoft:windows_10</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2008 or 2008 Beta 3" accuracy="88" line="74063">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="88"><cpe>cpe:/o:microsoft:windows_server_2008::beta3</cpe><cpe>cpe:/o:microsoft:windows_server_2008</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2008 SP1" accuracy="85" line="74666">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="85"><cpe>cpe:/o:microsoft:windows_server_2008::sp1</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="1903440" lastboot="Tue Nov 12 16:47:35 2024"/>
+<distance value="3"/>
+<tcpsequence index="199" difficulty="Good luck!" values="A3BF5A0F,3467D659,E31E5630,226E4C58,1BBC727A,C7A4449F"/>
+<ipidsequence class="Incremental" values="56CD,56CE,56CF,56D0,56D1,56D2"/>
+<tcptssequence class="1000HZ" values="7157478B,71579AC8,7157EE05,71584142,7158947F,7158E7BC"/>
+<trace port="443" proto="tcp">
+<hop ttl="1" ipaddr="192.168.40.2" rtt="0.23" host="_gateway"/>
+<hop ttl="3" ipaddr="10.12.188.66" rtt="0.65"/>
+</trace>
+<times srtt="780" rttvar="101" to="400000"/>
+</host>
+<host starttime="1733274231" endtime="1733304695"><status state="up" reason="echo-reply" reason_ttl="62"/>
+<address addr="10.12.188.68" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="986">
+<extrareasons reason="resets" count="986"/>
+</extraports>
+<port protocol="tcp" portid="6"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ssh" product="OpenSSH" version="8.9p1 Ubuntu 3ubuntu0.10" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.9p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="135"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4125"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="rww" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5298"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="presence" method="table" conf="3"/></port>
+<port protocol="tcp" portid="6502"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="netop-rc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8500"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="fmtp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10001"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="scp-config" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10009"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="swdtp-sv" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10010"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="rxapi" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10012"><state state="filtered" reason="host-unreach" reason_ttl="64"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="20000"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="dnp" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="42914"/>
+<osmatch name="Linux 2.6.32 - 2.6.35" accuracy="95" line="56133">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 - 2.6.39" accuracy="95" line="56230">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32" accuracy="94" line="54126">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 or 3.10" accuracy="94" line="56650">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:3.10</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.4" accuracy="94" line="67202">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:4.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 - 2.6.33" accuracy="92" line="56094">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.9 - 2.6.27" accuracy="92" line="59009">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.0" accuracy="92" line="66814">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:4.0</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 - 3.0" accuracy="90" line="56293">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Synology DiskStation Manager 5.1" accuracy="90" line="68096">
+<osclass type="storage-misc" vendor="Linux" osfamily="Linux" accuracy="90"><cpe>cpe:/o:linux:linux_kernel</cpe></osclass>
+<osclass type="storage-misc" vendor="Synology" osfamily="DiskStation Manager" osgen="5.X" accuracy="90"><cpe>cpe:/a:synology:diskstation_manager:5.1</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="412257" lastboot="Fri Nov 29 23:00:38 2024"/>
+<distance value="3"/>
+<tcpsequence index="194" difficulty="Good luck!" values="DDF92B48,B935B2D9,7F68A1EA,D77693E6,2608A06F,43236F84"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="1875A4F3,1875F831,18764B6E,18769EAC,1876F1E9,18774527"/>
+<trace port="1720" proto="tcp">
+<hop ttl="1" ipaddr="192.168.40.2" rtt="0.23" host="_gateway"/>
+<hop ttl="3" ipaddr="10.12.188.68" rtt="0.61"/>
+</trace>
+<times srtt="702" rttvar="130" to="400000"/>
+</host>
+<host starttime="1733274317" endtime="1733304695"><status state="up" reason="echo-reply" reason_ttl="126"/>
+<address addr="10.12.188.73" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="999">
+<extrareasons reason="no-responses" count="998"/>
+<extrareasons reason="host-unreach" count="1"/>
+</extraports>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="126"/><service name="ms-wbt-server" product="Microsoft Terminal Services" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="rdp-ntlm-info" output="&#xa;  Target_Name: DESKTOP-3AHCVCB&#xa;  NetBIOS_Domain_Name: DESKTOP-3AHCVCB&#xa;  NetBIOS_Computer_Name: DESKTOP-3AHCVCB&#xa;  DNS_Domain_Name: DESKTOP-3AHCVCB&#xa;  DNS_Computer_Name: DESKTOP-3AHCVCB&#xa;  Product_Version: 10.0.19041&#xa;  System_Time: 2024-12-04T09:29:18+00:00"><elem key="Target_Name">DESKTOP-3AHCVCB</elem>
+<elem key="NetBIOS_Domain_Name">DESKTOP-3AHCVCB</elem>
+<elem key="NetBIOS_Computer_Name">DESKTOP-3AHCVCB</elem>
+<elem key="DNS_Domain_Name">DESKTOP-3AHCVCB</elem>
+<elem key="DNS_Computer_Name">DESKTOP-3AHCVCB</elem>
+<elem key="Product_Version">10.0.19041</elem>
+<elem key="System_Time">2024-12-04T09:29:18+00:00</elem>
+</script><script id="ssl-cert" output="Subject: commonName=DESKTOP-3AHCVCB&#xa;Not valid before: 2024-12-03T04:08:45&#xa;Not valid after:  2025-06-04T04:08:45"><table key="subject">
+<elem key="commonName">DESKTOP-3AHCVCB</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">DESKTOP-3AHCVCB</elem>
+</table>
+<table key="pubkey">
+<elem key="modulus">BIGNUM: 0x5c5645f42bc8</elem>
+<elem key="exponent">BIGNUM: 0x5c5645f42b48</elem>
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">TLS Web Server Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-12-03T04:08:45</elem>
+<elem key="notAfter">2025-06-04T04:08:45</elem>
+</table>
+<elem key="md5">a8d31ad5f8bafd2fb6503c8b54852623</elem>
+<elem key="sha1">8f59e752ad98da77fe81b5ed64919143609eeb08</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC4jCCAcqgAwIBAgIQI+oamEpO7b1KvXnGsGOtkTANBgkqhkiG9w0BAQsFADAa&#xa;MRgwFgYDVQQDEw9ERVNLVE9QLTNBSENWQ0IwHhcNMjQxMjAzMDQwODQ1WhcNMjUw&#xa;NjA0MDQwODQ1WjAaMRgwFgYDVQQDEw9ERVNLVE9QLTNBSENWQ0IwggEiMA0GCSqG&#xa;SIb3DQEBAQUAA4IBDwAwggEKAoIBAQCt2g3tgAUq65FTagguW510CHrhw84HijI9&#xa;hvMumSGIhiOcIKU5tb14/GwhrHTBEC3umubs7/xMe5rK/G6EXZuok6WFPY9+BZPz&#xa;mg7SHIgLd99TvDhIp7dN22TH4WwnVFFZPE/nH5zdGQK7gU9VC9x4I32Qd0HY+oqY&#xa;/idEUsHSJIv4vGNB/Ee+nJ/mvhTQt0x5DlrzeJWXB/cgPnRC/Fwb9t750UhUGQwC&#xa;Z2UqHp1dwvv9R8BdR7pycy0MFGIQ+JuCm86Y1IoqX+hVdwLwvalZCaqo1V7Y6Q4i&#xa;6imulVgp4JV4FPVarBvUy4M9wv5uJxbVs1sF+uSbnsUuvoL/jN/9AgMBAAGjJDAi&#xa;MBMGA1UdJQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG9w0BAQsF&#xa;AAOCAQEAR+kDVcxsGDPEoI1JPhKkkuuPF0lG3fYqAWCuYStZMklfUBWu4H4GESUl&#xa;KxJPagSFpFUimG9uOmRswoxhsV+w7cU0rFRhGJ7bdVbLzM1tLGHTk6VxL2zn91MQ&#xa;jX5yPE+SVFncEoLj8VxDWdHIoL9FS7JMRBSvVa+zAkSJDfbpYZ7IJE+ylalHnXAx&#xa;gLNqC6SdYsnHIFuHJ55PzgVArjFmRUl/k6SPl1Zad1jy/AnMOfpMbrgJRXlSxIkY&#xa;Pjqvn6VCQsUhQx2D5pM0qNu5JLFe3tWvrrKcGU+vk5qr3kW31yeias4GHT96hwzj&#xa;HD6sl+Oc92VRh+MtDHqX2XjXrnyYkA==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2024-12-04T09:31:14+00:00; +2s from scanner time."><elem key="delta">2.0</elem>
+<elem key="date">2024-12-04T09:31:14+00:00</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="3389"/>
+<osmatch name="Microsoft Windows XP SP2" accuracy="85" line="81708">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="XP" accuracy="85"><cpe>cpe:/o:microsoft:windows_xp::sp2</cpe></osclass>
+</osmatch>
+</os>
+<distance value="3"/>
+<tcpsequence index="196" difficulty="Good luck!" values="4DE3C746,E6338456,8F1D7073,1A5EAEE7,CDB5B6C9,F286A10A"/>
+<ipidsequence class="Incremental" values="F9E1,F9E2,F9E3,F9E4,F9E5,F9E6"/>
+<tcptssequence class="none returned (unsupported)"/>
+<hostscript><script id="clock-skew" output="mean: 1s, deviation: 0s, median: 0s"><elem key="count">2</elem>
+<elem key="mean">1</elem>
+<elem key="median">0</elem>
+<elem key="stddev">0</elem>
+</script></hostscript><trace port="3389" proto="tcp">
+<hop ttl="1" ipaddr="192.168.40.2" rtt="0.23" host="_gateway"/>
+<hop ttl="3" ipaddr="10.12.188.73" rtt="0.75"/>
+</trace>
+<times srtt="761" rttvar="112" to="400000"/>
+</host>
+<host starttime="1733274319" endtime="1733304695"><status state="up" reason="echo-reply" reason_ttl="62"/>
+<address addr="10.12.188.88" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="999">
+<extrareasons reason="no-responses" count="998"/>
+<extrareasons reason="host-unreach" count="1"/>
+</extraports>
+<port protocol="tcp" portid="6881"><state state="closed" reason="reset" reason_ttl="125"/><service name="bittorrent-tracker" method="table" conf="3"/></port>
+</ports>
+<os><portused state="closed" proto="tcp" portid="6881"/>
+<osmatch name="Buffalo TeraStation Pro II NAS device" accuracy="97" line="12140">
+<osclass type="storage-misc" vendor="Buffalo" osfamily="embedded" accuracy="97"/>
+</osmatch>
+<osmatch name="Cisco Adaptive Security Appliance (ASA 7.2)" accuracy="97" line="13380">
+<osclass type="firewall" vendor="Cisco" osfamily="ASA" osgen="7.X" accuracy="97"><cpe>cpe:/a:cisco:adaptive_security_appliance_software:7.2</cpe></osclass>
+</osmatch>
+<osmatch name="FreeBSD 7.0-RELEASE-p5" accuracy="97" line="27994">
+<osclass type="general purpose" vendor="FreeBSD" osfamily="FreeBSD" osgen="7.X" accuracy="97"><cpe>cpe:/o:freebsd:freebsd:7.0</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.24" accuracy="97" line="52144">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:2.6.24</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.27 (openSUSE 11.1)" accuracy="97" line="53221">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:2.6.27</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.30" accuracy="97" line="53626">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:2.6.30</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.12 (Dreambox derivative)" accuracy="97" line="59477">
+<osclass type="media device" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:2.6.12</cpe></osclass>
+</osmatch>
+<osmatch name="IPCop 2 firewall (Linux 3.4)" accuracy="97" line="62013">
+<osclass type="firewall" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:3.4</cpe></osclass>
+<osclass type="firewall" vendor="IPCop" osfamily="IPCop" osgen="2.X" accuracy="97"><cpe>cpe:/o:ipcop:ipcop:2</cpe></osclass>
+</osmatch>
+<osmatch name="Novell NetWare 6.5" accuracy="97" line="89316">
+<osclass type="general purpose" vendor="Novell" osfamily="NetWare" osgen="6.X" accuracy="97"><cpe>cpe:/o:novell:netware:6.5</cpe></osclass>
+</osmatch>
+<osmatch name="Novell NetWare 6.5 SP5" accuracy="97" line="89427">
+<osclass type="general purpose" vendor="Novell" osfamily="NetWare" osgen="6.X" accuracy="97"><cpe>cpe:/o:novell:netware:6.5:sp5</cpe></osclass>
+</osmatch>
+</os>
+<distance value="3"/>
+<trace port="6881" proto="tcp">
+<hop ttl="1" ipaddr="192.168.40.2" rtt="0.23" host="_gateway"/>
+<hop ttl="3" ipaddr="10.12.188.88" rtt="5.26"/>
+</trace>
+<times srtt="4639" rttvar="1660" to="400000"/>
+</host>
+<host starttime="1733274454" endtime="1733304695"><status state="up" reason="echo-reply" reason_ttl="126"/>
+<address addr="10.12.188.104" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="990">
+<extrareasons reason="resets" count="990"/>
+</extraports>
+<port protocol="tcp" portid="135"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="126"/><service name="ms-wbt-server" product="Microsoft Terminal Services" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="rdp-ntlm-info" output="&#xa;  Target_Name: DESKTOP-VPEMGMQ&#xa;  NetBIOS_Domain_Name: DESKTOP-VPEMGMQ&#xa;  NetBIOS_Computer_Name: DESKTOP-VPEMGMQ&#xa;  DNS_Domain_Name: DESKTOP-VPEMGMQ&#xa;  DNS_Computer_Name: DESKTOP-VPEMGMQ&#xa;  Product_Version: 10.0.19041&#xa;  System_Time: 2024-12-04T09:30:38+00:00"><elem key="Target_Name">DESKTOP-VPEMGMQ</elem>
+<elem key="NetBIOS_Domain_Name">DESKTOP-VPEMGMQ</elem>
+<elem key="NetBIOS_Computer_Name">DESKTOP-VPEMGMQ</elem>
+<elem key="DNS_Domain_Name">DESKTOP-VPEMGMQ</elem>
+<elem key="DNS_Computer_Name">DESKTOP-VPEMGMQ</elem>
+<elem key="Product_Version">10.0.19041</elem>
+<elem key="System_Time">2024-12-04T09:30:38+00:00</elem>
+</script><script id="ssl-cert" output="Subject: commonName=DESKTOP-VPEMGMQ&#xa;Not valid before: 2024-09-29T00:39:43&#xa;Not valid after:  2025-03-31T00:39:43"><table key="subject">
+<elem key="commonName">DESKTOP-VPEMGMQ</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">DESKTOP-VPEMGMQ</elem>
+</table>
+<table key="pubkey">
+<elem key="modulus">BIGNUM: 0x5c56467d8c48</elem>
+<elem key="exponent">BIGNUM: 0x5c5645f430f8</elem>
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">TLS Web Server Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-09-29T00:39:43</elem>
+<elem key="notAfter">2025-03-31T00:39:43</elem>
+</table>
+<elem key="md5">1b467acc5bd3b06b7fde71ed2d0f6e1c</elem>
+<elem key="sha1">0d959e145e6f682ebc8cea805834865e7ff1022b</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC4jCCAcqgAwIBAgIQHG3V6DjkvaZCi6ILwM5WSzANBgkqhkiG9w0BAQsFADAa&#xa;MRgwFgYDVQQDEw9ERVNLVE9QLVZQRU1HTVEwHhcNMjQwOTI5MDAzOTQzWhcNMjUw&#xa;MzMxMDAzOTQzWjAaMRgwFgYDVQQDEw9ERVNLVE9QLVZQRU1HTVEwggEiMA0GCSqG&#xa;SIb3DQEBAQUAA4IBDwAwggEKAoIBAQDJF7sYMVqOIFyjOYwhEz48GU8YaS4D/zkX&#xa;cJ53WeJdX+iLVVv1sru8eePb7eEAqbOpto2GrJYGUubsQ/6ceZ2E8AQ2wM92iN/r&#xa;609PrRh2VCB26BrJXyYxvdFg2hK2wpphON67WhblKLMI1sloYdfcy6TAAUGhvvIN&#xa;kF2mFgkhH01mRprBRfP+L7vS6jaJ7cnu432dfuUJo1hMKsf0gmFxM1pbeOrAH3/a&#xa;u6M7yM9CNkFlVa2Hw6fHIPBv5814UD6yzu5cU+lvqgiZuVM+RkE42L4AVbC5rCYm&#xa;5Q42lb55SOmgRaEkaCWT3EEp9eEFaf7jOtr2cw2QWZ1KsjoZUXvpAgMBAAGjJDAi&#xa;MBMGA1UdJQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG9w0BAQsF&#xa;AAOCAQEAC7280IefB1hDmMyTsptQwitbU6/4LCl0uPu3thM6JrRJKAAcK5r34RiM&#xa;pwnYZRrWR5gb/ao3yGR1pIVLmqHqAw033WYRZ2b97i8IjUrkeKQDTGR8MYsLa+Hq&#xa;TjkOMX/ikMTFv9iifFTIk7IrREIuqP+/4drY6wofG8UikRsrxme3tg23J0+kxNQW&#xa;axRUrQiw72lC6uE/A+CYGNeW3KLwWV3dwYhPQd8pRdUeZOteQg4YLHj5seykTTeK&#xa;T6nN/+GPWYEQipqe5z0z4PWcy6L+Ulj55wAx+9t+TEkvPH+MABQ0hvG2zJ98l29x&#xa;A8/+g6L82e6PY41D0FSTKvUTOsYHFQ==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2024-12-04T09:31:35+00:00; +14s from scanner time."><elem key="delta">14.0</elem>
+<elem key="date">2024-12-04T09:31:35+00:00</elem>
+</script></port>
+<port protocol="tcp" portid="8652"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10001"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="scp-config" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10009"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="swdtp-sv" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10010"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="rxapi" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10012"><state state="filtered" reason="host-unreach" reason_ttl="64"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="20000"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="dnp" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="3389"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="43161"/>
+<osmatch name="Microsoft Windows Server 2008 SP1 or Windows Server 2008 R2" accuracy="89" line="74830">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="89"><cpe>cpe:/o:microsoft:windows_server_2008::sp1</cpe><cpe>cpe:/o:microsoft:windows_server_2008:r2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 7" accuracy="88" line="75938">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="88"><cpe>cpe:/o:microsoft:windows_7</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.18 - 2.6.22" accuracy="86" line="49721">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="86"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2008 or 2008 Beta 3" accuracy="85" line="74063">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="85"><cpe>cpe:/o:microsoft:windows_server_2008::beta3</cpe><cpe>cpe:/o:microsoft:windows_server_2008</cpe></osclass>
+</osmatch>
+</os>
+<distance value="3"/>
+<tcpsequence index="192" difficulty="Good luck!" values="27336199,DAF1F8B4,110ED857,ED9131ED,128B9295,280080A1"/>
+<ipidsequence class="Incremental" values="AD93,AD94,AD95,AD96,AD97,AD98"/>
+<tcptssequence class="none returned (unsupported)"/>
+<hostscript><script id="clock-skew" output="mean: 14s, deviation: 0s, median: 13s"><elem key="count">2</elem>
+<elem key="mean">14</elem>
+<elem key="median">13</elem>
+<elem key="stddev">0</elem>
+</script></hostscript><trace port="1025" proto="tcp">
+<hop ttl="1" ipaddr="192.168.40.2" rtt="0.23" host="_gateway"/>
+<hop ttl="3" ipaddr="10.12.188.104" rtt="0.51"/>
+</trace>
+<times srtt="719" rttvar="209" to="400000"/>
+</host>
+<host starttime="1733274386" endtime="1733304695"><status state="up" reason="host-unreach" reason_ttl="62"/>
+<address addr="10.12.188.113" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="host-unreaches" count="959"/>
+<extrareasons reason="no-responses" count="41"/>
+</extraports>
+</ports>
+<os></os>
+<distance value="4"/>
+<trace port="443" proto="tcp">
+<hop ttl="1" ipaddr="192.168.40.2" rtt="0.23" host="_gateway"/>
+<hop ttl="4" ipaddr="10.12.188.113" rtt="994.62"/>
+</trace>
+<times srtt="2743615" rttvar="504611" to="4762059"/>
+</host>
+<host starttime="1733274237" endtime="1733304695"><status state="up" reason="echo-reply" reason_ttl="62"/>
+<address addr="10.12.188.114" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="999">
+<extrareasons reason="no-responses" count="998"/>
+<extrareasons reason="host-unreach" count="1"/>
+</extraports>
+<port protocol="tcp" portid="23"><state state="closed" reason="reset" reason_ttl="61"/><service name="telnet" method="table" conf="3"/></port>
+</ports>
+<os><portused state="closed" proto="tcp" portid="23"/>
+</os>
+<distance value="3"/>
+<trace port="23" proto="tcp">
+<hop ttl="1" ipaddr="192.168.40.2" rtt="0.23" host="_gateway"/>
+<hop ttl="3" ipaddr="10.12.188.114" rtt="1.37"/>
+</trace>
+<times srtt="1268" rttvar="180" to="400000"/>
+</host>
+<host starttime="1733274237" endtime="1733304695"><status state="up" reason="echo-reply" reason_ttl="62"/>
+<address addr="10.12.188.117" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="990">
+<extrareasons reason="resets" count="990"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ssh" product="OpenSSH" version="8.2p1 Ubuntu 4ubuntu0.11" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.2p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="135"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1031"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="iad2" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10001"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="scp-config" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10009"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="swdtp-sv" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10010"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="rxapi" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10012"><state state="filtered" reason="host-unreach" reason_ttl="64"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="20000"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="dnp" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="36419"/>
+<osmatch name="Linux 2.6.32 - 2.6.35" accuracy="95" line="56133">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 - 2.6.39" accuracy="95" line="56230">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32" accuracy="94" line="54126">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 or 3.10" accuracy="94" line="56650">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:3.10</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.4" accuracy="94" line="67202">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:4.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 - 2.6.33" accuracy="92" line="56094">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.9 - 2.6.27" accuracy="92" line="59009">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.0" accuracy="92" line="66814">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:4.0</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 - 3.0" accuracy="90" line="56293">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Fortinet FortiAnalyzer-400B firewall (Linux 2.6)" accuracy="90" line="47139">
+<osclass type="firewall" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+<osclass type="firewall" vendor="Fortinet" osfamily="embedded" accuracy="90"><cpe>cpe:/h:fortinet:fortianalyzer-400b</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="3891571" lastboot="Sun Oct 20 16:32:04 2024"/>
+<distance value="3"/>
+<tcpsequence index="196" difficulty="Good luck!" values="A9EE290,32205F54,7C43D1B6,F3E957AE,B3BB1BDC,F5890B76"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="E7D7CA4C,E7D81D88,E7D870C6,E7D8C403,E7D91740,E7D96A7D"/>
+<trace port="1025" proto="tcp">
+<hop ttl="1" ipaddr="192.168.40.2" rtt="0.23" host="_gateway"/>
+<hop ttl="3" ipaddr="10.12.188.117" rtt="1.64"/>
+</trace>
+<times srtt="1468" rttvar="192" to="400000"/>
+</host>
+<host starttime="1733274052" endtime="1733304695"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.12.188.126" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="988">
+<extrareasons reason="resets" count="988"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="tcpwrapped" method="probed" conf="8"/><script id="ssh-hostkey" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="135"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="720"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3333"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="postgresql" product="PostgreSQL DB" servicefp="SF-Port3333-TCP:V=7.80%I=7%D=12/4%Time=67500EE9%P=x86_64-pc-linux-gnu%r(Kerberos,85,&quot;E\0\0\0\x84SFATAL\0C0A000\0Munsupported\x20frontend\x20protocol\x2027265\.28208:\x20server\x20supports\x201\.0\x20to\x203\.0\0Fpostmaster\.c\0L1724\0RProcessStartupPacket\0\0&quot;)%r(SMBProgNeg,85,&quot;E\0\0\0\x84SFATAL\0C0A000\0Munsupported\x20frontend\x20protocol\x2065363\.19778:\x20server\x20supports\x201\.0\x20to\x203\.0\0Fpostmaster\.c\0L1724\0RProcessStartupPacket\0\0&quot;);" method="probed" conf="10"><cpe>cpe:/a:postgresql:postgresql</cpe></service><script id="fingerprint-strings" output="&#xa;  Kerberos: &#xa;    SFATAL&#xa;    C0A000&#xa;    Munsupported frontend protocol 27265.28208: server supports 1.0 to 3.0&#xa;    Fpostmaster.c&#xa;    L1724&#xa;    RProcessStartupPacket&#xa;  SMBProgNeg: &#xa;    SFATAL&#xa;    C0A000&#xa;    Munsupported frontend protocol 65363.19778: server supports 1.0 to 3.0&#xa;    Fpostmaster.c&#xa;    L1724&#xa;    RProcessStartupPacket"><elem key="Kerberos">&#xa;    SFATAL&#xa;    C0A000&#xa;    Munsupported frontend protocol 27265.28208: server supports 1.0 to 3.0&#xa;    Fpostmaster.c&#xa;    L1724&#xa;    RProcessStartupPacket</elem>
+<elem key="SMBProgNeg">&#xa;    SFATAL&#xa;    C0A000&#xa;    Munsupported frontend protocol 65363.19778: server supports 1.0 to 3.0&#xa;    Fpostmaster.c&#xa;    L1724&#xa;    RProcessStartupPacket</elem>
+</script></port>
+<port protocol="tcp" portid="8042"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="fs-agent" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10001"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="scp-config" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10009"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="swdtp-sv" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10010"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="rxapi" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10012"><state state="filtered" reason="host-unreach" reason_ttl="64"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="20000"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="dnp" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="3333"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="30615"/>
+<osmatch name="DD-WRT v23 (Linux 2.4.34)" accuracy="94" line="46182">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.4.34</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.4.20" accuracy="91" line="45116">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:2.4.20</cpe></osclass>
+</osmatch>
+<osmatch name="Actiontec GT701 DSL modem" accuracy="90" line="1325">
+<osclass type="broadband router" vendor="Actiontec" osfamily="embedded" accuracy="90"><cpe>cpe:/h:actiontec:gt701</cpe></osclass>
+</osmatch>
+<osmatch name="HP 4200 PSA (Print Server Appliance) model J4117A" accuracy="90" line="32215">
+<osclass type="print server" vendor="HP" osfamily="embedded" accuracy="90"/>
+</osmatch>
+<osmatch name="Linux 2.4.21 (embedded)" accuracy="90" line="45992">
+<osclass type="specialized" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:2.4.21</cpe></osclass>
+</osmatch>
+<osmatch name="DD-WRT v24-sp2 (Linux 2.4.36)" accuracy="89" line="46350">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:2.4.36</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.4.21" accuracy="89" line="45290">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:2.4.21</cpe></osclass>
+</osmatch>
+<osmatch name="MontaVista embedded Linux 2.4.17" accuracy="88" line="45754">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:2.4.17</cpe></osclass>
+</osmatch>
+<osmatch name="DD-WRT v23 (Linux 2.4.36)" accuracy="88" line="46200">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:2.4.36</cpe></osclass>
+</osmatch>
+<osmatch name="Ubiquiti EdgeSwitch (Linux 3.6)" accuracy="88" line="102862">
+<osclass type="switch" vendor="Ubiquiti" osfamily="embedded" accuracy="88"><cpe>cpe:/h:ubnt:edgeswitch</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:3.6</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="17335216" lastboot="Sat May 18 02:11:19 2024"/>
+<distance value="3"/>
+<tcpsequence index="191" difficulty="Good luck!" values="633CEDCF,5C8FD549,2D6F5C8E,4B271A99,37BB10E4,6C2E1CD4"/>
+<ipidsequence class="Randomized" values="A25C,E008,1EC0,5DDB,9FFF,E1A2"/>
+<tcptssequence class="100HZ" values="67508D9E,675095F0,67509E43,6750A698,6750AEE9,6750B73C"/>
+<trace port="1025" proto="tcp">
+<hop ttl="1" ipaddr="192.168.40.2" rtt="0.23" host="_gateway"/>
+<hop ttl="3" ipaddr="10.12.188.126" rtt="0.56"/>
+</trace>
+<times srtt="1576" rttvar="1472" to="400000"/>
+</host>
+<host starttime="1733274127" endtime="1733304695"><status state="up" reason="reset" reason_ttl="63"/>
+<address addr="10.12.188.127" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="986">
+<extrareasons reason="resets" count="986"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="135"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1036"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="nsstp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1090"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ff-fms" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1117"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ardus-mtrns" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3333"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="dec-notes" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9080"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="glrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10001"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="scp-config" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10009"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="swdtp-sv" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10010"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="rxapi" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10012"><state state="filtered" reason="host-unreach" reason_ttl="64"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="20000"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="dnp" method="table" conf="3"/></port>
+</ports>
+<os><portused state="closed" proto="tcp" portid="1"/>
+</os>
+<distance value="3"/>
+<trace port="1720" proto="tcp">
+<hop ttl="1" ipaddr="192.168.40.2" rtt="0.23" host="_gateway"/>
+<hop ttl="3" ipaddr="10.12.188.127" rtt="0.68"/>
+</trace>
+<times srtt="833" rttvar="287" to="400000"/>
+</host>
+<host starttime="1733274127" endtime="1733304695"><status state="up" reason="reset" reason_ttl="62"/>
+<address addr="10.12.188.130" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="988">
+<extrareasons reason="resets" count="988"/>
+</extraports>
+<port protocol="tcp" portid="135"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1287"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="routematch" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3324"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="active-net" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="10001"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="scp-config" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10009"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="swdtp-sv" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10010"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="rxapi" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10012"><state state="filtered" reason="host-unreach" reason_ttl="64"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="20000"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="dnp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="58080"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="3389"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="32432"/>
+<osmatch name="Cisco Unified Communications Manager VoIP adapter" accuracy="93" line="14715">
+<osclass type="VoIP adapter" vendor="Cisco" osfamily="embedded" accuracy="93"><cpe>cpe:/h:cisco:unified_call_manager</cpe></osclass>
+</osmatch>
+<osmatch name="Android 7.1.2 (Linux 3.10)" accuracy="93" line="31423">
+<osclass type="phone" vendor="Google" osfamily="Android" osgen="7.X" accuracy="93"><cpe>cpe:/o:google:android:7.1.2</cpe></osclass>
+<osclass type="phone" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3.10</cpe></osclass>
+</osmatch>
+<osmatch name="DD-WRT v23 (Linux 2.4.36)" accuracy="93" line="46200">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:2.4.36</cpe></osclass>
+</osmatch>
+<osmatch name="Vyatta router (Linux 2.6.26)" accuracy="93" line="47225">
+<osclass type="firewall" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:2.6.26</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.18" accuracy="93" line="48774">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:2.6.18</cpe></osclass>
+</osmatch>
+<osmatch name="Tomato firmware (Linux 2.6.22)" accuracy="93" line="61430">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:2.6.22</cpe></osclass>
+</osmatch>
+<osmatch name="MikroTik RouterOS 5.25 (Linux 2.6.35)" accuracy="93" line="85279">
+<osclass type="router" vendor="MikroTik" osfamily="RouterOS" osgen="5.X" accuracy="93"><cpe>cpe:/o:mikrotik:routeros:5.25</cpe></osclass>
+<osclass type="router" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:2.6.35</cpe></osclass>
+</osmatch>
+<osmatch name="Netgear ReadyNAS Duo NAS device (RAIDiator 4.1.4)" accuracy="93" line="88079">
+<osclass type="storage-misc" vendor="Netgear" osfamily="RAIDiator" osgen="4.X" accuracy="93"><cpe>cpe:/o:netgear:raidiator:4.1.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.28" accuracy="92" line="53371">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:2.6.28</cpe></osclass>
+</osmatch>
+<osmatch name="Lexmark Z2400 printer" accuracy="92" line="43312">
+<osclass type="printer" vendor="Lexmark" osfamily="embedded" accuracy="92"><cpe>cpe:/h:lexmark:z2400</cpe></osclass>
+</osmatch>
+</os>
+<distance value="3"/>
+<trace port="1025" proto="tcp">
+<hop ttl="1" ipaddr="192.168.40.2" rtt="0.23" host="_gateway"/>
+<hop ttl="3" ipaddr="10.12.188.130" rtt="0.88"/>
+</trace>
+<times srtt="829" rttvar="77" to="400000"/>
+</host>
+<host starttime="1733274052" endtime="1733304695"><status state="up" reason="echo-reply" reason_ttl="126"/>
+<address addr="10.12.188.132" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="584">
+<extrareasons reason="host-unreaches" count="427"/>
+<extrareasons reason="no-responses" count="157"/>
+</extraports>
+<extraports state="closed" count="414">
+<extrareasons reason="resets" count="414"/>
+</extraports>
+<port protocol="tcp" portid="1025"><state state="open" reason="syn-ack" reason_ttl="126"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="5357"><state state="open" reason="syn-ack" reason_ttl="126"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="5357"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<osmatch name="Fortinet FortiGate 100D firewall" accuracy="87" line="25595">
+<osclass type="firewall" vendor="Fortinet" osfamily="embedded" accuracy="87"><cpe>cpe:/h:fortinet:fortigate_100d</cpe></osclass>
+</osmatch>
+</os>
+<trace port="1720" proto="tcp">
+<hop ttl="1" ipaddr="192.168.40.2" rtt="0.23" host="_gateway"/>
+<hop ttl="3" ipaddr="222.20.126.254" rtt="2630.78"/>
+<hop ttl="4" ipaddr="222.20.126.254" rtt="1030.33"/>
+<hop ttl="5" ipaddr="222.20.126.254" rtt="626.01"/>
+<hop ttl="6" ipaddr="222.20.126.254" rtt="5028.96"/>
+<hop ttl="7" ipaddr="222.20.126.254" rtt="5001.95"/>
+<hop ttl="8" ipaddr="222.20.126.254" rtt="5011.95"/>
+<hop ttl="9" ipaddr="222.20.126.254" rtt="5017.59"/>
+<hop ttl="10" ipaddr="222.20.126.254" rtt="5019.64"/>
+<hop ttl="11" ipaddr="222.20.126.254" rtt="2623.73"/>
+<hop ttl="12" ipaddr="222.20.126.254" rtt="223.77"/>
+<hop ttl="13" ipaddr="222.20.126.254" rtt="2627.33"/>
+<hop ttl="14" ipaddr="222.20.126.254" rtt="227.33"/>
+<hop ttl="15" ipaddr="222.20.126.254" rtt="2626.93"/>
+<hop ttl="16" ipaddr="222.20.126.254" rtt="226.93"/>
+<hop ttl="17" ipaddr="222.20.126.254" rtt="2601.42"/>
+<hop ttl="18" ipaddr="222.20.126.254" rtt="201.41"/>
+<hop ttl="19" ipaddr="222.20.126.254" rtt="2629.64"/>
+<hop ttl="20" ipaddr="222.20.126.254" rtt="229.67"/>
+<hop ttl="21" ipaddr="222.20.126.254" rtt="2604.64"/>
+<hop ttl="22" ipaddr="222.20.126.254" rtt="204.67"/>
+<hop ttl="23" ipaddr="222.20.126.254" rtt="2626.94"/>
+<hop ttl="24" ipaddr="222.20.126.254" rtt="226.91"/>
+<hop ttl="25" ipaddr="222.20.126.254" rtt="2626.60"/>
+<hop ttl="26" ipaddr="222.20.126.254" rtt="226.65"/>
+<hop ttl="27" ipaddr="222.20.126.254" rtt="2623.14"/>
+<hop ttl="28" ipaddr="222.20.126.254" rtt="223.14"/>
+<hop ttl="29" ipaddr="222.20.126.254" rtt="2620.45"/>
+<hop ttl="30" ipaddr="222.20.126.254" rtt="220.45"/>
+</trace>
+<times srtt="5022675" rttvar="6955" to="5050495"/>
+</host>
+<host starttime="1733274054" endtime="1733304695"><status state="up" reason="echo-reply" reason_ttl="62"/>
+<address addr="10.12.188.149" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="987">
+<extrareasons reason="resets" count="987"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ssh" product="OpenSSH" version="8.9p1 Ubuntu 3ubuntu0.10" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.9p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="43"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="whois" method="table" conf="3"/></port>
+<port protocol="tcp" portid="135"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2111"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="kx" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5989"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="wbem-https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10001"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="scp-config" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10009"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="swdtp-sv" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10010"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="rxapi" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10012"><state state="filtered" reason="host-unreach" reason_ttl="64"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="20000"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="dnp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49159"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="41051"/>
+<osmatch name="Linux 2.6.32 - 2.6.35" accuracy="96" line="56133">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 - 2.6.39" accuracy="95" line="56230">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32" accuracy="94" line="54126">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 or 3.10" accuracy="94" line="56650">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:3.10</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.4" accuracy="94" line="67202">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:4.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 - 2.6.33" accuracy="92" line="56094">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.9 - 2.6.27" accuracy="92" line="59009">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.0" accuracy="92" line="66814">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:4.0</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.37" accuracy="91" line="57439">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:2.6.37</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.39" accuracy="91" line="57946">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:2.6.39</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="3191345" lastboot="Mon Oct 28 19:02:30 2024"/>
+<distance value="3"/>
+<tcpsequence index="197" difficulty="Good luck!" values="37B6408D,A84C7CC3,81E687A4,20221651,B102E0DA,E787E0F7"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="BE1B4765,BE1B9AA1,BE1BEDDF,BE1C411C,BE1C9459,BE1CE795"/>
+<trace port="1025" proto="tcp">
+<hop ttl="1" ipaddr="192.168.40.2" rtt="0.23" host="_gateway"/>
+<hop ttl="3" ipaddr="10.12.188.149" rtt="0.66"/>
+</trace>
+<times srtt="653" rttvar="47" to="400000"/>
+</host>
+<host starttime="1733274057" endtime="1733304695"><status state="up" reason="echo-reply" reason_ttl="62"/>
+<address addr="10.12.188.170" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="999"/>
+<extrareasons reason="host-unreach" count="1"/>
+</extraports>
+</ports>
+<os></os>
+<distance value="3"/>
+<trace proto="icmp">
+<hop ttl="1" ipaddr="192.168.40.2" rtt="0.23" host="_gateway"/>
+<hop ttl="3" ipaddr="10.12.188.170" rtt="0.70"/>
+</trace>
+<times srtt="701" rttvar="271" to="400000"/>
+</host>
+<host starttime="1733274567" endtime="1733304695"><status state="up" reason="echo-reply" reason_ttl="62"/>
+<address addr="10.12.188.175" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="895">
+<extrareasons reason="resets" count="895"/>
+</extraports>
+<extraports state="filtered" count="104">
+<extrareasons reason="no-responses" count="88"/>
+<extrareasons reason="host-unreaches" count="16"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="tcpwrapped" method="probed" conf="8"/><script id="ssh-hostkey" output="ERROR: Script execution failed (use -d to debug)"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<osmatch name="Fortinet FortiGate 100D firewall" accuracy="87" line="25595">
+<osclass type="firewall" vendor="Fortinet" osfamily="embedded" accuracy="87"><cpe>cpe:/h:fortinet:fortigate_100d</cpe></osclass>
+</osmatch>
+</os>
+<trace port="1025" proto="tcp">
+<hop ttl="1" ipaddr="192.168.40.2" rtt="0.23" host="_gateway"/>
+<hop ttl="3" ipaddr="222.20.126.254" rtt="2611.28"/>
+<hop ttl="4" ipaddr="222.20.126.254" rtt="1028.51"/>
+<hop ttl="5" ipaddr="222.20.126.254" rtt="1026.00"/>
+<hop ttl="6" ipaddr="222.20.126.254" rtt="5022.47"/>
+<hop ttl="7" ipaddr="222.20.126.254" rtt="5020.13"/>
+<hop ttl="8" ipaddr="222.20.126.254" rtt="5015.56"/>
+<hop ttl="9" ipaddr="222.20.126.254" rtt="5019.16"/>
+<hop ttl="10" ipaddr="222.20.126.254" rtt="5017.85"/>
+<hop ttl="11" ipaddr="222.20.126.254" rtt="2607.74"/>
+<hop ttl="12" ipaddr="222.20.126.254" rtt="207.96"/>
+<hop ttl="13" ipaddr="222.20.126.254" rtt="2626.38"/>
+<hop ttl="14" ipaddr="222.20.126.254" rtt="226.60"/>
+<hop ttl="15" ipaddr="222.20.126.254" rtt="2630.00"/>
+<hop ttl="16" ipaddr="222.20.126.254" rtt="230.23"/>
+<hop ttl="17" ipaddr="222.20.126.254" rtt="2630.52"/>
+<hop ttl="18" ipaddr="222.20.126.254" rtt="230.74"/>
+<hop ttl="19" ipaddr="222.20.126.254" rtt="2628.46"/>
+<hop ttl="20" ipaddr="222.20.126.254" rtt="228.71"/>
+<hop ttl="21" ipaddr="222.20.126.254" rtt="2628.67"/>
+<hop ttl="22" ipaddr="222.20.126.254" rtt="228.90"/>
+<hop ttl="23" ipaddr="222.20.126.254" rtt="2627.98"/>
+<hop ttl="24" ipaddr="222.20.126.254" rtt="228.19"/>
+<hop ttl="25" ipaddr="222.20.126.254" rtt="2609.72"/>
+<hop ttl="26" ipaddr="222.20.126.254" rtt="210.03"/>
+<hop ttl="27" ipaddr="222.20.126.254" rtt="2630.12"/>
+<hop ttl="28" ipaddr="222.20.126.254" rtt="230.34"/>
+<hop ttl="29" ipaddr="222.20.126.254" rtt="2623.85"/>
+<hop ttl="30" ipaddr="222.20.126.254" rtt="224.11"/>
+</trace>
+<times srtt="4396990" rttvar="1113814" to="8852246"/>
+</host>
+<host starttime="1733274510" endtime="1733304695"><status state="up" reason="echo-reply" reason_ttl="126"/>
+<address addr="10.12.188.184" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="515">
+<extrareasons reason="host-unreaches" count="364"/>
+<extrareasons reason="no-responses" count="151"/>
+</extraports>
+<extraports state="closed" count="481">
+<extrareasons reason="resets" count="481"/>
+</extraports>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="126"/><service name="tcpwrapped" product="VMware Workstation SOAP API" version="16.1.2" method="probed" conf="10"><cpe>cpe:/o:vmware:Workstation:16.1.2</cpe></service><script id="http-title" output="Site doesn&apos;t have a title (text/plain; charset=utf-8)."></script><script id="ssl-cert" output="Subject: commonName=VMware/countryName=US&#xa;Not valid before: 2021-09-13T02:06:25&#xa;Not valid after:  2022-09-13T02:06:25"><table key="subject">
+<elem key="organizationalUnitName">VMware</elem>
+<elem key="localityName">Palo Alto</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">VMware</elem>
+<elem key="emailAddress">none@vmware.com</elem>
+</table>
+<table key="issuer">
+<elem key="organizationalUnitName">VMware</elem>
+<elem key="localityName">Palo Alto</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">VMware</elem>
+<elem key="emailAddress">none@vmware.com</elem>
+</table>
+<table key="pubkey">
+<elem key="modulus">BIGNUM: 0x5c56442139d8</elem>
+<elem key="exponent">BIGNUM: 0x5c5644213998</elem>
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">4B:A8:1B:33:C3:BD:1C:7B:09:1D:AE:89:29:5B:F3:6B:2F:9C:69:64</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">keyid:4B:A8:1B:33:C3:BD:1C:7B:09:1D:AE:89:29:5B:F3:6B:2F:9C:69:64&#xa;DirName:/C=US/L=Palo Alto/OU=VMware/CN=VMware/emailAddress=none@vmware.com&#xa;serial:A2:99:F4:B1:C1:CD:4A:A7</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">CA:TRUE</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2021-09-13T02:06:25</elem>
+<elem key="notAfter">2022-09-13T02:06:25</elem>
+</table>
+<elem key="md5">6ee3a14e93a51ac8ecdbd1fb5e895b69</elem>
+<elem key="sha1">e270140bebae2e29c8d28d6bca1598dd7aac4713</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIEEjCCAvqgAwIBAgIJAKKZ9LHBzUqnMA0GCSqGSIb3DQEBCwUAMGMxCzAJBgNV&#xa;BAYTAlVTMRIwEAYDVQQHDAlQYWxvIEFsdG8xDzANBgNVBAsMBlZNd2FyZTEPMA0G&#xa;A1UEAwwGVk13YXJlMR4wHAYJKoZIhvcNAQkBFg9ub25lQHZtd2FyZS5jb20wHhcN&#xa;MjEwOTEzMDIwNjI1WhcNMjIwOTEzMDIwNjI1WjBjMQswCQYDVQQGEwJVUzESMBAG&#xa;A1UEBwwJUGFsbyBBbHRvMQ8wDQYDVQQLDAZWTXdhcmUxDzANBgNVBAMMBlZNd2Fy&#xa;ZTEeMBwGCSqGSIb3DQEJARYPbm9uZUB2bXdhcmUuY29tMIIBIjANBgkqhkiG9w0B&#xa;AQEFAAOCAQ8AMIIBCgKCAQEA1IVVqc/oEiDY2CqqoT+lQQA8cnPeiq8nVQbngJ/h&#xa;JwWOPyrnUeT1M5xCz260+PWpG9i84r4IumCE0RRePocZlvnG1FZcwdoEL5U/VSvQ&#xa;KcUvqS8KxRFKWYwXECO9nxWLSTBMrD3Gp6I73SiB+oz8wn0V2h31ijN+3eFd/Nos&#xa;QB40Lxx5Jjz+U33ufecmsfkk9TvuuR/Y4ZfhIvAFlUkbDkkMKVMeG84gbqELjQUo&#xa;Lj6GSaZHEyg4is+P7ay7j6L2FJVu7xugV6waadRsMZoixR02F9QOEiR994jCXf/r&#xa;Gxhtyi9ufBKeOmn5xqCB3sWmuPIAGGtdz+v1HGxQlwPe6QIDAQABo4HIMIHFMB0G&#xa;A1UdDgQWBBRLqBszw70cewkdrokpW/NrL5xpZDCBlQYDVR0jBIGNMIGKgBRLqBsz&#xa;w70cewkdrokpW/NrL5xpZKFnpGUwYzELMAkGA1UEBhMCVVMxEjAQBgNVBAcMCVBh&#xa;bG8gQWx0bzEPMA0GA1UECwwGVk13YXJlMQ8wDQYDVQQDDAZWTXdhcmUxHjAcBgkq&#xa;hkiG9w0BCQEWD25vbmVAdm13YXJlLmNvbYIJAKKZ9LHBzUqnMAwGA1UdEwQFMAMB&#xa;Af8wDQYJKoZIhvcNAQELBQADggEBAB1wQvCYoYUJpF1Lv+J2w6K/3AwWDm2uV36T&#xa;lrb09OsAm2zphZy3cjPgaRVRmoYuwx7S9I6cCZ//5dB3Hzr3cpa84LMt2lkzcpiy&#xa;InnXZy5OOf2ig0Hq9pPl1DHEQRLz9OU0I0uIKUgniSc7hQZJpHtAJRPJzImYmwc5&#xa;IGOTviBgO/pBzSv/XZIeufp8mMbNZM/Zpx5xikzsj9+5/nBDrAc/KjhzXYmB3I9T&#xa;/JM8Joew686hhUbKBR1I6dk8AHLFzKV158V/W52K1VzPBfyYD0SqAvgDSfXThx1k&#xa;lQO/CjZC2baIHM1cc7gk6ytmYO3ibC1D99A8LNnwHBjOitOqiuU=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="vmware-version" output="&#xa;  Server version: VMware Workstation 16.1.2&#xa;  Build: 17966106&#xa;  Locale version: INTL  &#xa;  OS type: win32-x86&#xa;  Product Line ID: ws"><elem key="Server version">VMware Workstation 16.1.2</elem>
+<elem key="Build">17966106</elem>
+<elem key="Locale version">INTL  </elem>
+<elem key="OS type">win32-x86</elem>
+<elem key="Product Line ID">ws</elem>
+</script></port>
+<port protocol="tcp" portid="912"><state state="open" reason="syn-ack" reason_ttl="126"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="1054"><state state="open" reason="syn-ack" reason_ttl="126"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="5357"><state state="open" reason="syn-ack" reason_ttl="126"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="5357"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="36583"/>
+<osmatch name="Microsoft Windows Server 2008 SP1 or Windows Server 2008 R2" accuracy="89" line="74830">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="89"><cpe>cpe:/o:microsoft:windows_server_2008::sp1</cpe><cpe>cpe:/o:microsoft:windows_server_2008:r2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2008 or 2008 Beta 3" accuracy="88" line="74063">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="88"><cpe>cpe:/o:microsoft:windows_server_2008::beta3</cpe><cpe>cpe:/o:microsoft:windows_server_2008</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 7" accuracy="88" line="75938">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="88"><cpe>cpe:/o:microsoft:windows_7</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2008" accuracy="87" line="73991">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="87"><cpe>cpe:/o:microsoft:windows_server_2008</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.18 - 2.6.22" accuracy="86" line="49721">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="86"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2008 SP1" accuracy="85" line="74666">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="85"><cpe>cpe:/o:microsoft:windows_server_2008::sp1</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 10" accuracy="85" line="68986">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="10" accuracy="85"><cpe>cpe:/o:microsoft:windows_10</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 7 SP1 or Windows Server 2008 R2" accuracy="85" line="77209">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="85"><cpe>cpe:/o:microsoft:windows_7</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="85"><cpe>cpe:/o:microsoft:windows_server_2008:r2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Vista SP0 or SP1, Windows Server 2008 SP1, or Windows 7" accuracy="85" line="79575">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="Vista" accuracy="85"><cpe>cpe:/o:microsoft:windows_vista::-</cpe><cpe>cpe:/o:microsoft:windows_vista::sp1</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="85"><cpe>cpe:/o:microsoft:windows_server_2008::sp1</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="85"><cpe>cpe:/o:microsoft:windows_7</cpe></osclass>
+</osmatch>
+</os>
+<distance value="3"/>
+<tcpsequence index="200" difficulty="Good luck!" values="5F98118E,D13E910B,B818A812,2FAB8F16,ABC87840,6E66122D"/>
+<ipidsequence class="Incremental" values="170,171,172,173,174,175"/>
+<tcptssequence class="none returned (unsupported)"/>
+<trace port="1025" proto="tcp">
+<hop ttl="1" ipaddr="192.168.40.2" rtt="0.23" host="_gateway"/>
+<hop ttl="3" ipaddr="10.12.188.184" rtt="0.47"/>
+</trace>
+<times srtt="519302" rttvar="931663" to="4245954"/>
+</host>
+<host starttime="1733274248" endtime="1733304695"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.12.188.190" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="988">
+<extrareasons reason="resets" count="988"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="tcpwrapped" method="probed" conf="8"/><script id="ssh-hostkey" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="135"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1218"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="aeroflight-ads" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3333"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="postgresql" product="PostgreSQL DB" servicefp="SF-Port3333-TCP:V=7.80%I=7%D=12/4%Time=67500F15%P=x86_64-pc-linux-gnu%r(Kerberos,85,&quot;E\0\0\0\x84SFATAL\0C0A000\0Munsupported\x20frontend\x20protocol\x2027265\.28208:\x20server\x20supports\x201\.0\x20to\x203\.0\0Fpostmaster\.c\0L1724\0RProcessStartupPacket\0\0&quot;)%r(SMBProgNeg,85,&quot;E\0\0\0\x84SFATAL\0C0A000\0Munsupported\x20frontend\x20protocol\x2065363\.19778:\x20server\x20supports\x201\.0\x20to\x203\.0\0Fpostmaster\.c\0L1724\0RProcessStartupPacket\0\0&quot;);" method="probed" conf="10"><cpe>cpe:/a:postgresql:postgresql</cpe></service><script id="fingerprint-strings" output="&#xa;  Kerberos: &#xa;    SFATAL&#xa;    C0A000&#xa;    Munsupported frontend protocol 27265.28208: server supports 1.0 to 3.0&#xa;    Fpostmaster.c&#xa;    L1724&#xa;    RProcessStartupPacket&#xa;  SMBProgNeg: &#xa;    SFATAL&#xa;    C0A000&#xa;    Munsupported frontend protocol 65363.19778: server supports 1.0 to 3.0&#xa;    Fpostmaster.c&#xa;    L1724&#xa;    RProcessStartupPacket"><elem key="Kerberos">&#xa;    SFATAL&#xa;    C0A000&#xa;    Munsupported frontend protocol 27265.28208: server supports 1.0 to 3.0&#xa;    Fpostmaster.c&#xa;    L1724&#xa;    RProcessStartupPacket</elem>
+<elem key="SMBProgNeg">&#xa;    SFATAL&#xa;    C0A000&#xa;    Munsupported frontend protocol 65363.19778: server supports 1.0 to 3.0&#xa;    Fpostmaster.c&#xa;    L1724&#xa;    RProcessStartupPacket</elem>
+</script></port>
+<port protocol="tcp" portid="10001"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="scp-config" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10009"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="swdtp-sv" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10010"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="rxapi" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10012"><state state="filtered" reason="host-unreach" reason_ttl="64"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="20000"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="dnp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="65389"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="3333"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="31567"/>
+<osmatch name="DD-WRT v23 (Linux 2.4.34)" accuracy="94" line="46182">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.4.34</cpe></osclass>
+</osmatch>
+<osmatch name="Actiontec GT701 DSL modem" accuracy="91" line="1325">
+<osclass type="broadband router" vendor="Actiontec" osfamily="embedded" accuracy="91"><cpe>cpe:/h:actiontec:gt701</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.4.20" accuracy="90" line="45116">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:2.4.20</cpe></osclass>
+</osmatch>
+<osmatch name="DD-WRT v24-sp2 (Linux 2.4.36)" accuracy="90" line="46350">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:2.4.36</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.4.21 (embedded)" accuracy="90" line="45992">
+<osclass type="specialized" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:2.4.21</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 - 2.6.33" accuracy="89" line="56094">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="DD-WRT v23 (Linux 2.4.36)" accuracy="89" line="46200">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:2.4.36</cpe></osclass>
+</osmatch>
+<osmatch name="HP 4200 PSA (Print Server Appliance) model J4117A" accuracy="89" line="32215">
+<osclass type="print server" vendor="HP" osfamily="embedded" accuracy="89"/>
+</osmatch>
+<osmatch name="Linux 2.4.21" accuracy="89" line="45290">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:2.4.21</cpe></osclass>
+</osmatch>
+<osmatch name="Check Point UTM-1 Edge X firewall" accuracy="88" line="13157">
+<osclass type="firewall" vendor="Check Point" osfamily="embedded" accuracy="88"/>
+</osmatch>
+</os>
+<uptime seconds="17335216" lastboot="Sat May 18 02:11:19 2024"/>
+<distance value="3"/>
+<tcpsequence index="197" difficulty="Good luck!" values="BE160526,7AE38B29,22398FFB,D705282D,36E03924,27C5F4A4"/>
+<ipidsequence class="Randomized" values="932C,D117,FE5,4F13,9149,D2BD"/>
+<tcptssequence class="100HZ" values="67508B95,675093E8,67509C3B,6750A48E,6750ACE1,6750B534"/>
+<trace port="3306" proto="tcp">
+<hop ttl="1" ipaddr="192.168.40.2" rtt="0.23" host="_gateway"/>
+<hop ttl="3" ipaddr="10.12.188.190" rtt="0.54"/>
+</trace>
+<times srtt="824" rttvar="425" to="400000"/>
+</host>
+<host starttime="1733274060" endtime="1733304695"><status state="up" reason="reset" reason_ttl="63"/>
+<address addr="10.12.188.191" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="987">
+<extrareasons reason="resets" count="987"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="135"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1095"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="nicelink" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2251"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="dif-port" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3333"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="dec-notes" method="table" conf="3"/></port>
+<port protocol="tcp" portid="6646"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10001"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="scp-config" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10009"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="swdtp-sv" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10010"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="rxapi" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10012"><state state="filtered" reason="host-unreach" reason_ttl="64"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="20000"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="dnp" method="table" conf="3"/></port>
+</ports>
+<os><portused state="closed" proto="tcp" portid="1"/>
+</os>
+<distance value="3"/>
+<trace port="1025" proto="tcp">
+<hop ttl="1" ipaddr="192.168.40.2" rtt="0.23" host="_gateway"/>
+<hop ttl="3" ipaddr="10.12.188.191" rtt="0.54"/>
+</trace>
+<times srtt="977" rttvar="735" to="400000"/>
+</host>
+<host starttime="1733274177" endtime="1733304695"><status state="up" reason="echo-reply" reason_ttl="62"/>
+<address addr="10.12.188.210" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="976">
+<extrareasons reason="resets" count="976"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ssh" product="Dropbear sshd" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:matt_johnston:dropbear_ssh_server</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="domain" extrainfo="generic dns response: NOTIMP" servicefp="SF-Port53-TCP:V=7.80%I=7%D=12/4%Time=67500F20%P=x86_64-pc-linux-gnu%r(DNSVersionBindReqTCP,20,&quot;\0\x1e\0\x06\x81\x84\0\x01\0\0\0\0\0\0\x07version\x04bind\0\0\x10\0\x03&quot;)%r(DNSStatusRequestTCP,E,&quot;\0\x0c\0\0\x90\x84\0\0\0\0\0\0\0\0&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  DNSVersionBindReqTCP: &#xa;    version&#xa;    bind"><elem key="DNSVersionBindReqTCP">&#xa;    version&#xa;    bind</elem>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="http" servicefp="SF-Port80-TCP:V=7.80%I=7%D=12/4%Time=67500F36%P=x86_64-pc-linux-gnu%r(HTTPOptions,4BFC,&quot;HTTP/1\.0\x20403\x20Forbidden\r\nConnection:\x20close\r\nx-luci-login-required:\x20yes\r\ncontent-type:\x20text/html\r\ncache-control:\x20no-cache\r\nexpires:\x200\r\nx-frame-options:\x20SAMEORIGIN\r\nx-xss-protection:\x201;\x20mode=block\r\nx-content-type-options:\x20nosniff\r\n\r\n&lt;!DOCTYPE\x20html&gt;\n&lt;html\x20lang=\&quot;zh-cn\&quot;&gt;\n\n&lt;head&gt;\n\t&lt;meta\x20charset=\&quot;utf-8\&quot;&gt;\n\t&lt;title&gt;\n\t\tOpenWrt\n\t\t-\x20LuCI&lt;/title&gt;\n\t&lt;meta\x20content=\&quot;width=device-width,\x20initial-scale=1\.0,\x20maximum-scale=1\.0,\x20user-scalable=0\&quot;\x20name=\&quot;viewport\&quot;\x20/&gt;\n\t&lt;meta\x20name=\&quot;format-detection\&quot;\x20content=\&quot;telephone=no,\x20email=no\&quot;\x20/&gt;\n\t&lt;meta\x20name=\&quot;apple-mobile-web-app-capable\&quot;\x20content=\&quot;yes\&quot;&gt;\n\t&lt;meta\x20name=\&quot;mobile-web-app-capable\&quot;\x20content=\&quot;yes\&quot;&gt;\n\t&lt;meta\x20name=\&quot;x5-fullscreen\&quot;\x20content=\&quot;true\&quot;&gt;\n\t&lt;meta\x20name=\&quot;full-screen\&quot;\x20content=\&quot;yes\&quot;&gt;\n\t&lt;meta\x20name=\&quot;x5-page-mode\&quot;\x20content=\&quot;app\&quot;&gt;\n\t&lt;meta\x20name=\&quot;browsermode\&quot;\x20content=\&quot;application\&quot;&gt;\n\t&lt;meta\x20name=\&quot;msapplication-tap-highlight\&quot;\x20content=\&quot;no\&quot;&gt;\n\t&lt;meta\x20name=\&quot;msapplication-TileColor\&quot;\x20content=\&quot;&quot;)%r(RTSPRequest,79,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\nConnection:\x20Keep-Alive\r\nKeep-Alive:\x20timeout=20\r\nContent-Type:\x20text/html\r\n\r\n&lt;h1&gt;Bad\x20Request&lt;/h1&gt;&quot;)%r(FourOhFourRequest,AC,&quot;HTTP/1\.0\x20404\x20Not\x20Found\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n&lt;h1&gt;Not\x20Found&lt;/h1&gt;The\x20requested\x20URL\x20/nice%20ports%2C/Tri%6Eity\.txt%2ebak\x20was\x20not\x20found\x20on\x20this\x20server\.&quot;)%r(Help,79,&quot;HTTP/0\.9\x20400\x20Bad\x20Request\r\nConnection:\x20Keep-Alive\r\nKeep-Alive:\x20timeout=20\r\nContent-Type:\x20text/html\r\n\r\n&lt;h1&gt;Bad\x20Request&lt;/h1&gt;&quot;)%r(SIPOptions,79,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\nConnection:\x20Keep-Alive\r\nKeep-Alive:\x20timeout=20\r\nContent-Type:\x20text/html\r\n\r\n&lt;h1&gt;Bad\x20Request&lt;/h1&gt;&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest: &#xa;    HTTP/1.0 404 Not Found&#xa;    Connection: close&#xa;    Content-Type: text/html&#xa;    &lt;h1&gt;Not Found&lt;/h1&gt;The requested URL /nice%20ports%2C/Tri%6Eity.txt%2ebak was not found on this server.&#xa;  HTTPOptions: &#xa;    HTTP/1.0 403 Forbidden&#xa;    Connection: close&#xa;    x-luci-login-required: yes&#xa;    content-type: text/html&#xa;    cache-control: no-cache&#xa;    expires: 0&#xa;    x-frame-options: SAMEORIGIN&#xa;    x-xss-protection: 1; mode=block&#xa;    x-content-type-options: nosniff&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html lang=&quot;zh-cn&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta charset=&quot;utf-8&quot;&gt;&#xa;    &lt;title&gt;&#xa;    OpenWrt&#xa;    LuCI&lt;/title&gt;&#xa;    &lt;meta content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0&quot; name=&quot;viewport&quot; /&gt;&#xa;    &lt;meta name=&quot;format-detection&quot; content=&quot;telephone=no, email=no&quot; /&gt;&#xa;    &lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot;&gt;&#xa;    &lt;meta name=&quot;mobile-web-app-capable&quot; content=&quot;yes&quot;&gt;&#xa;    &lt;meta name=&quot;x5-fullscreen&quot; content=&quot;true&quot;&gt;&#xa;    &lt;meta name=&quot;full-screen&quot; content=&quot;yes&quot;&gt;&#xa;    &lt;meta name=&quot;x5-page-mode&quot; content=&quot;app&quot;&gt;&#xa;    &lt;meta name=&quot;browsermode&quot; content=&quot;application&quot;&gt;&#xa;    &lt;meta name=&quot;msapplication-tap-highlight&quot; content=&quot;no&quot;&gt;&#xa;    &lt;meta name=&quot;msapplication-TileColor&quot; content=&quot;&#xa;  Help: &#xa;    HTTP/0.9 400 Bad Request&#xa;    Connection: Keep-Alive&#xa;    Keep-Alive: timeout=20&#xa;    Content-Type: text/html&#xa;    &lt;h1&gt;Bad Request&lt;/h1&gt;&#xa;  RTSPRequest, SIPOptions: &#xa;    HTTP/1.0 400 Bad Request&#xa;    Connection: Keep-Alive&#xa;    Keep-Alive: timeout=20&#xa;    Content-Type: text/html&#xa;    &lt;h1&gt;Bad Request&lt;/h1&gt;"><elem key="FourOhFourRequest">&#xa;    HTTP/1.0 404 Not Found&#xa;    Connection: close&#xa;    Content-Type: text/html&#xa;    &lt;h1&gt;Not Found&lt;/h1&gt;The requested URL /nice%20ports%2C/Tri%6Eity.txt%2ebak was not found on this server.</elem>
+<elem key="HTTPOptions">&#xa;    HTTP/1.0 403 Forbidden&#xa;    Connection: close&#xa;    x-luci-login-required: yes&#xa;    content-type: text/html&#xa;    cache-control: no-cache&#xa;    expires: 0&#xa;    x-frame-options: SAMEORIGIN&#xa;    x-xss-protection: 1; mode=block&#xa;    x-content-type-options: nosniff&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html lang=&quot;zh-cn&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta charset=&quot;utf-8&quot;&gt;&#xa;    &lt;title&gt;&#xa;    OpenWrt&#xa;    LuCI&lt;/title&gt;&#xa;    &lt;meta content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0&quot; name=&quot;viewport&quot; /&gt;&#xa;    &lt;meta name=&quot;format-detection&quot; content=&quot;telephone=no, email=no&quot; /&gt;&#xa;    &lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot;&gt;&#xa;    &lt;meta name=&quot;mobile-web-app-capable&quot; content=&quot;yes&quot;&gt;&#xa;    &lt;meta name=&quot;x5-fullscreen&quot; content=&quot;true&quot;&gt;&#xa;    &lt;meta name=&quot;full-screen&quot; content=&quot;yes&quot;&gt;&#xa;    &lt;meta name=&quot;x5-page-mode&quot; content=&quot;app&quot;&gt;&#xa;    &lt;meta name=&quot;browsermode&quot; content=&quot;application&quot;&gt;&#xa;    &lt;meta name=&quot;msapplication-tap-highlight&quot; content=&quot;no&quot;&gt;&#xa;    &lt;meta name=&quot;msapplication-TileColor&quot; content=&quot;</elem>
+<elem key="Help">&#xa;    HTTP/0.9 400 Bad Request&#xa;    Connection: Keep-Alive&#xa;    Keep-Alive: timeout=20&#xa;    Content-Type: text/html&#xa;    &lt;h1&gt;Bad Request&lt;/h1&gt;</elem>
+<elem key="RTSPRequest, SIPOptions">&#xa;    HTTP/1.0 400 Bad Request&#xa;    Connection: Keep-Alive&#xa;    Keep-Alive: timeout=20&#xa;    Content-Type: text/html&#xa;    &lt;h1&gt;Bad Request&lt;/h1&gt;</elem>
+</script><script id="http-title" output="OpenWrt- LuCI"><elem key="title">&#xa;&#x9;&#x9;OpenWrt&#xa;&#x9;&#x9;- LuCI</elem>
+</script></port>
+<port protocol="tcp" portid="135"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="https" servicefp="SF-Port443-TCP:V=7.80%T=SSL%I=7%D=12/4%Time=67500FB6%P=x86_64-pc-linux-gnu%r(GetRequest,202B,&quot;HTTP/1\.0\x20403\x20Forbidden\r\nConnection:\x20close\r\nx-luci-login-required:\x20yes\r\ncontent-type:\x20text/html\r\ncache-control:\x20no-cache\r\nexpires:\x200\r\nx-frame-options:\x20SAMEORIGIN\r\nx-xss-protection:\x201;\x20mode=block\r\nx-content-type-options:\x20nosniff\r\n\r\n&lt;!DOCTYPE\x20html&gt;\n&lt;html\x20lang=\&quot;zh-cn\&quot;&gt;\n\n&lt;head&gt;\n\t&lt;meta\x20charset=\&quot;utf-8\&quot;&gt;\n\t&lt;title&gt;\n\t\tOpenWrt\n\t\t-\x20LuCI&lt;/title&gt;\n\t&lt;meta\x20content=\&quot;width=device-width,\x20initial-scale=1\.0,\x20maximum-scale=1\.0,\x20user-scalable=0\&quot;\x20name=\&quot;viewport\&quot;\x20/&gt;\n\t&lt;meta\x20name=\&quot;format-detection\&quot;\x20content=\&quot;telephone=no,\x20email=no\&quot;\x20/&gt;\n\t&lt;meta\x20name=\&quot;apple-mobile-web-app-capable\&quot;\x20content=\&quot;yes\&quot;&gt;\n\t&lt;meta\x20name=\&quot;mobile-web-app-capable\&quot;\x20content=\&quot;yes\&quot;&gt;\n\t&lt;meta\x20name=\&quot;x5-fullscreen\&quot;\x20content=\&quot;true\&quot;&gt;\n\t&lt;meta\x20name=\&quot;full-screen\&quot;\x20content=\&quot;yes\&quot;&gt;\n\t&lt;meta\x20name=\&quot;x5-page-mode\&quot;\x20content=\&quot;app\&quot;&gt;\n\t&lt;meta\x20name=\&quot;browsermode\&quot;\x20content=\&quot;application\&quot;&gt;\n\t&lt;meta\x20name=\&quot;msapplication-tap-highlight\&quot;\x20content=\&quot;no\&quot;&gt;\n\t&lt;meta\x20name=\&quot;msapplication-TileColor\&quot;\x20content=\&quot;&quot;)%r(HTTPOptions,102B,&quot;HTTP/1\.0\x20403\x20Forbidden\r\nConnection:\x20close\r\nx-luci-login-required:\x20yes\r\ncontent-type:\x20text/html\r\ncache-control:\x20no-cache\r\nexpires:\x200\r\nx-frame-options:\x20SAMEORIGIN\r\nx-xss-protection:\x201;\x20mode=block\r\nx-content-type-options:\x20nosniff\r\n\r\n&lt;!DOCTYPE\x20html&gt;\n&lt;html\x20lang=\&quot;zh-cn\&quot;&gt;\n\n&lt;head&gt;\n\t&lt;meta\x20charset=\&quot;utf-8\&quot;&gt;\n\t&lt;title&gt;\n\t\tOpenWrt\n\t\t-\x20LuCI&lt;/title&gt;\n\t&lt;meta\x20content=\&quot;width=device-width,\x20initial-scale=1\.0,\x20maximum-scale=1\.0,\x20user-scalable=0\&quot;\x20name=\&quot;viewport\&quot;\x20/&gt;\n\t&lt;meta\x20name=\&quot;format-detection\&quot;\x20content=\&quot;telephone=no,\x20email=no\&quot;\x20/&gt;\n\t&lt;meta\x20name=\&quot;apple-mobile-web-app-capable\&quot;\x20content=\&quot;yes\&quot;&gt;\n\t&lt;meta\x20name=\&quot;mobile-web-app-capable\&quot;\x20content=\&quot;yes\&quot;&gt;\n\t&lt;meta\x20name=\&quot;x5-fullscreen\&quot;\x20content=\&quot;true\&quot;&gt;\n\t&lt;meta\x20name=\&quot;full-screen\&quot;\x20content=\&quot;yes\&quot;&gt;\n\t&lt;meta\x20name=\&quot;x5-page-mode\&quot;\x20content=\&quot;app\&quot;&gt;\n\t&lt;meta\x20name=\&quot;browsermode\&quot;\x20content=\&quot;application\&quot;&gt;\n\t&lt;meta\x20name=\&quot;msapplication-tap-highlight\&quot;\x20content=\&quot;no\&quot;&gt;\n\t&lt;meta\x20name=\&quot;msapplication-TileColor\&quot;\x20content=\&quot;&quot;);" tunnel="ssl" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  GetRequest, HTTPOptions: &#xa;    HTTP/1.0 403 Forbidden&#xa;    Connection: close&#xa;    x-luci-login-required: yes&#xa;    content-type: text/html&#xa;    cache-control: no-cache&#xa;    expires: 0&#xa;    x-frame-options: SAMEORIGIN&#xa;    x-xss-protection: 1; mode=block&#xa;    x-content-type-options: nosniff&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html lang=&quot;zh-cn&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta charset=&quot;utf-8&quot;&gt;&#xa;    &lt;title&gt;&#xa;    OpenWrt&#xa;    LuCI&lt;/title&gt;&#xa;    &lt;meta content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0&quot; name=&quot;viewport&quot; /&gt;&#xa;    &lt;meta name=&quot;format-detection&quot; content=&quot;telephone=no, email=no&quot; /&gt;&#xa;    &lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot;&gt;&#xa;    &lt;meta name=&quot;mobile-web-app-capable&quot; content=&quot;yes&quot;&gt;&#xa;    &lt;meta name=&quot;x5-fullscreen&quot; content=&quot;true&quot;&gt;&#xa;    &lt;meta name=&quot;full-screen&quot; content=&quot;yes&quot;&gt;&#xa;    &lt;meta name=&quot;x5-page-mode&quot; content=&quot;app&quot;&gt;&#xa;    &lt;meta name=&quot;browsermode&quot; content=&quot;application&quot;&gt;&#xa;    &lt;meta name=&quot;msapplication-tap-highlight&quot; content=&quot;no&quot;&gt;&#xa;    &lt;meta name=&quot;msapplication-TileColor&quot; content=&quot;"><elem key="GetRequest, HTTPOptions">&#xa;    HTTP/1.0 403 Forbidden&#xa;    Connection: close&#xa;    x-luci-login-required: yes&#xa;    content-type: text/html&#xa;    cache-control: no-cache&#xa;    expires: 0&#xa;    x-frame-options: SAMEORIGIN&#xa;    x-xss-protection: 1; mode=block&#xa;    x-content-type-options: nosniff&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html lang=&quot;zh-cn&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta charset=&quot;utf-8&quot;&gt;&#xa;    &lt;title&gt;&#xa;    OpenWrt&#xa;    LuCI&lt;/title&gt;&#xa;    &lt;meta content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0&quot; name=&quot;viewport&quot; /&gt;&#xa;    &lt;meta name=&quot;format-detection&quot; content=&quot;telephone=no, email=no&quot; /&gt;&#xa;    &lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot;&gt;&#xa;    &lt;meta name=&quot;mobile-web-app-capable&quot; content=&quot;yes&quot;&gt;&#xa;    &lt;meta name=&quot;x5-fullscreen&quot; content=&quot;true&quot;&gt;&#xa;    &lt;meta name=&quot;full-screen&quot; content=&quot;yes&quot;&gt;&#xa;    &lt;meta name=&quot;x5-page-mode&quot; content=&quot;app&quot;&gt;&#xa;    &lt;meta name=&quot;browsermode&quot; content=&quot;application&quot;&gt;&#xa;    &lt;meta name=&quot;msapplication-tap-highlight&quot; content=&quot;no&quot;&gt;&#xa;    &lt;meta name=&quot;msapplication-TileColor&quot; content=&quot;</elem>
+</script><script id="http-title" output="OpenWrt- LuCI"><elem key="title">&#xa;&#x9;&#x9;OpenWrt&#xa;&#x9;&#x9;- LuCI</elem>
+</script><script id="ssl-cert" output="Subject: commonName=OpenWrt/organizationName=OpenWrt0a29e553/stateOrProvinceName=Somewhere/countryName=ZZ&#xa;Not valid before: 2023-11-18T19:37:17&#xa;Not valid after:  2025-11-17T19:37:17"><table key="subject">
+<elem key="organizationName">OpenWrt0a29e553</elem>
+<elem key="localityName">Unknown</elem>
+<elem key="stateOrProvinceName">Somewhere</elem>
+<elem key="countryName">ZZ</elem>
+<elem key="commonName">OpenWrt</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">OpenWrt0a29e553</elem>
+<elem key="localityName">Unknown</elem>
+<elem key="stateOrProvinceName">Somewhere</elem>
+<elem key="countryName">ZZ</elem>
+<elem key="commonName">OpenWrt</elem>
+</table>
+<table key="pubkey">
+<elem key="type">ec</elem>
+<elem key="bits">256</elem>
+<table key="ecdhparams">
+<table key="curve_params">
+<elem key="ec_curve_type">namedcurve</elem>
+<elem key="curve">prime256v1</elem>
+</table>
+</table>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">65:3C:7F:6B:77:39:CF:06:EB:F8:E7:80:A9:70:2E:51:05:53:7D:01</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">65:3C:7F:6B:77:39:CF:06:EB:F8:E7:80:A9:70:2E:51:05:53:7D:01</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+</table>
+<elem key="sig_algo">ecdsa-with-SHA256</elem>
+<table key="validity">
+<elem key="notBefore">2023-11-18T19:37:17</elem>
+<elem key="notAfter">2025-11-17T19:37:17</elem>
+</table>
+<elem key="md5">3f2fe30f3f2dc8b0ce7cdbaebb4a373c</elem>
+<elem key="sha1">f819014e8f3cae0b85fc3fb68305033c86fbd67d</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIICAzCCAaigAwIBAgIJAOi07tyfOfhfMAoGCCqGSM49BAMCMF8xCzAJBgNVBAYT&#xa;AlpaMRIwEAYDVQQIDAlTb21ld2hlcmUxEDAOBgNVBAcMB1Vua25vd24xGDAWBgNV&#xa;BAoMD09wZW5XcnQwYTI5ZTU1MzEQMA4GA1UEAwwHT3BlbldydDAeFw0yMzExMTgx&#xa;OTM3MTdaFw0yNTExMTcxOTM3MTdaMF8xCzAJBgNVBAYTAlpaMRIwEAYDVQQIDAlT&#xa;b21ld2hlcmUxEDAOBgNVBAcMB1Vua25vd24xGDAWBgNVBAoMD09wZW5XcnQwYTI5&#xa;ZTU1MzEQMA4GA1UEAwwHT3BlbldydDBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IA&#xa;BC+pKzpV0Sa/ccn+gKi1jz8roW9LiH/aFlPZ03cgJncNUxX5E3jRes7UMdUg0AIn&#xa;mq664Uw3laSVCNGTIaOi9IajTTBLMAkGA1UdEwQCMAAwHQYDVR0OBBYEFGU8f2t3&#xa;Oc8G6/jngKlwLlEFU30BMB8GA1UdIwQYMBaAFGU8f2t3Oc8G6/jngKlwLlEFU30B&#xa;MAoGCCqGSM49BAMCA0kAMEYCIQCDJgFWh4alSOEqHb5KXiNx6O0B4QdORz5EGVsf&#xa;i8wO7gIhANm5GM3MsWBnbk+xWY3/CPsmN0A3AWS3Xz+CesW+ZEAR&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="445"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1002"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="windows-icfw" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2998"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="iss-realsec" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3003"><state state="open" reason="syn-ack" reason_ttl="61"/><service name="cgms" servicefp="SF-Port3003-TCP:V=7.80%I=7%D=12/4%Time=6750103B%P=x86_64-pc-linux-gnu%r(GetRequest,1D19,&quot;HTTP/1\.1\x20200\x20OK\r\nServer:\x20Werkzeug/2\.3\.7\x20Python/3\.10\.14\r\nDate:\x20Wed,\x2004\x20Dec\x202024\x2008:18:04\x20GMT\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nContent-Length:\x20459443\r\nVary:\x20Accept-Encoding,\x20Cookie\r\nConnection:\x20close\r\n\r\n\n\n&lt;!doctype\x20html&gt;\n&lt;html\x20lang=\&quot;zh-CN\&quot;&gt;\n&lt;head&gt;\n\x20\x20\n\x20\x20&lt;meta\x20charset=\&quot;utf-8\&quot;/&gt;\n\x20\x20&lt;meta\x20name=\&quot;viewport\&quot;\n\x20\x20\x20\x20\x20\x20\x20\x20content=\&quot;width=device-width,\x20initial-scale=1,\x20maximum-scale=1,\x20viewport-fit=cover,\x20user-scalable=0\&quot;&gt;\n\x20\x20&lt;meta\x20name=\&quot;Robots\&quot;\x20content=\&quot;noindex,nofollow,noarchive\&quot;&gt;\n\x20\x20&lt;link\x20rel=\&quot;icon\&quot;\x20type=\&quot;image/png\&quot;\x20href=\&quot;\.\./static/img/logo/logo\.png\&quot;&gt;\n\x20\x20&lt;link\x20rel=\&quot;icon\&quot;\x20type=\&quot;image/png\&quot;\x20sizes=\&quot;32x32\&quot;\x20href=\&quot;\.\./static/img/logo/logo-32x32\.png\&quot;&gt;\n\x20\x20&lt;link\x20rel=\&quot;icon\&quot;\x20type=\&quot;image/png\&quot;\x20sizes=\&quot;16x16\&quot;\x20href=\&quot;\.\./static/img/logo/logo-16x16\.png\&quot;&gt;\n\x20\x20&lt;link\x20rel=\&quot;apple-touch-icon\&quot;\x20href=\&quot;\.\./static/img/logo/logo-black\.png\&quot;&gt;\n\x20\x20&lt;link\x20rel=\&quot;apple-touch-icon\&quot;\x20sizes=\&quot;128x128\&quot;\x20href=\&quot;\.\./static/img/icons/128\.png\&quot;&gt;\n\x20\x20&lt;link\x20rel=&quot;)%r(HTTPOptions,E5,&quot;HTTP/1\.1\x20200\x20OK\r\nServer:\x20Werkzeug/2\.3\.7\x20Python/3\.10\.14\r\nDate:\x20Wed,\x2004\x20Dec\x202024\x2008:18:04\x20GMT\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nAllow:\x20OPTIONS,\x20POST,\x20GET,\x20HEAD\r\nVary:\x20Accept-Encoding\r\nContent-Length:\x200\r\nConnection:\x20close\r\n\r\n&quot;)%r(RTSPRequest,1F4,&quot;&lt;!DOCTYPE\x20HTML\x20PUBLIC\x20\&quot;-//W3C//DTD\x20HTML\x204\.01//EN\&quot;\n\x20\x20\x20\x20\x20\x20\x20\x20\&quot;http://www\.w3\.org/TR/html4/strict\.dtd\&quot;&gt;\n&lt;html&gt;\n\x20\x20\x20\x20&lt;head&gt;\n\x20\x20\x20\x20\x20\x20\x20\x20&lt;meta\x20http-equiv=\&quot;Content-Type\&quot;\x20content=\&quot;text/html;charset=utf-8\&quot;&gt;\n\x20\x20\x20\x20\x20\x20\x20\x20&lt;title&gt;Error\x20response&lt;/title&gt;\n\x20\x20\x20\x20&lt;/head&gt;\n\x20\x20\x20\x20&lt;body&gt;\n\x20\x20\x20\x20\x20\x20\x20\x20&lt;h1&gt;Error\x20response&lt;/h1&gt;\n\x20\x20\x20\x20\x20\x20\x20\x20&lt;p&gt;Error\x20code:\x20400&lt;/p&gt;\n\x20\x20\x20\x20\x20\x20\x20\x20&lt;p&gt;Message:\x20Bad\x20request\x20version\x20\(&apos;RTSP/1\.0&apos;\)\.&lt;/p&gt;\n\x20\x20\x20\x20\x20\x20\x20\x20&lt;p&gt;Error\x20code\x20explanation:\x20HTTPStatus\.BAD_REQUEST\x20-\x20Bad\x20request\x20syntax\x20or\x20unsupported\x20method\.&lt;/p&gt;\n\x20\x20\x20\x20&lt;/body&gt;\n&lt;/html&gt;\n&quot;);" method="table" conf="3"/><script id="fingerprint-strings" output="&#xa;  GetRequest: &#xa;    HTTP/1.1 200 OK&#xa;    Server: Werkzeug/2.3.7 Python/3.10.14&#xa;    Date: Wed, 04 Dec 2024 08:18:04 GMT&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Content-Length: 459443&#xa;    Vary: Accept-Encoding, Cookie&#xa;    Connection: close&#xa;    &lt;!doctype html&gt;&#xa;    &lt;html lang=&quot;zh-CN&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta charset=&quot;utf-8&quot;/&gt;&#xa;    &lt;meta name=&quot;viewport&quot;&#xa;    content=&quot;width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=0&quot;&gt;&#xa;    &lt;meta name=&quot;Robots&quot; content=&quot;noindex,nofollow,noarchive&quot;&gt;&#xa;    &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;../static/img/logo/logo.png&quot;&gt;&#xa;    &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; sizes=&quot;32x32&quot; href=&quot;../static/img/logo/logo-32x32.png&quot;&gt;&#xa;    &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; sizes=&quot;16x16&quot; href=&quot;../static/img/logo/logo-16x16.png&quot;&gt;&#xa;    &lt;link rel=&quot;apple-touch-icon&quot; href=&quot;../static/img/logo/logo-black.png&quot;&gt;&#xa;    &lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;128x128&quot; href=&quot;../static/img/icons/128.png&quot;&gt;&#xa;    &lt;link rel=&#xa;  HTTPOptions: &#xa;    HTTP/1.1 200 OK&#xa;    Server: Werkzeug/2.3.7 Python/3.10.14&#xa;    Date: Wed, 04 Dec 2024 08:18:04 GMT&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Allow: OPTIONS, POST, GET, HEAD&#xa;    Vary: Accept-Encoding&#xa;    Content-Length: 0&#xa;    Connection: close&#xa;  RTSPRequest: &#xa;    &lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;&#xa;    &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=utf-8&quot;&gt;&#xa;    &lt;title&gt;Error response&lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;h1&gt;Error response&lt;/h1&gt;&#xa;    &lt;p&gt;Error code: 400&lt;/p&gt;&#xa;    &lt;p&gt;Message: Bad request version (&apos;RTSP/1.0&apos;).&lt;/p&gt;&#xa;    &lt;p&gt;Error code explanation: HTTPStatus.BAD_REQUEST - Bad request syntax or unsupported method.&lt;/p&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;"><elem key="GetRequest">&#xa;    HTTP/1.1 200 OK&#xa;    Server: Werkzeug/2.3.7 Python/3.10.14&#xa;    Date: Wed, 04 Dec 2024 08:18:04 GMT&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Content-Length: 459443&#xa;    Vary: Accept-Encoding, Cookie&#xa;    Connection: close&#xa;    &lt;!doctype html&gt;&#xa;    &lt;html lang=&quot;zh-CN&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta charset=&quot;utf-8&quot;/&gt;&#xa;    &lt;meta name=&quot;viewport&quot;&#xa;    content=&quot;width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=0&quot;&gt;&#xa;    &lt;meta name=&quot;Robots&quot; content=&quot;noindex,nofollow,noarchive&quot;&gt;&#xa;    &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;../static/img/logo/logo.png&quot;&gt;&#xa;    &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; sizes=&quot;32x32&quot; href=&quot;../static/img/logo/logo-32x32.png&quot;&gt;&#xa;    &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; sizes=&quot;16x16&quot; href=&quot;../static/img/logo/logo-16x16.png&quot;&gt;&#xa;    &lt;link rel=&quot;apple-touch-icon&quot; href=&quot;../static/img/logo/logo-black.png&quot;&gt;&#xa;    &lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;128x128&quot; href=&quot;../static/img/icons/128.png&quot;&gt;&#xa;    &lt;link rel=</elem>
+<elem key="HTTPOptions">&#xa;    HTTP/1.1 200 OK&#xa;    Server: Werkzeug/2.3.7 Python/3.10.14&#xa;    Date: Wed, 04 Dec 2024 08:18:04 GMT&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Allow: OPTIONS, POST, GET, HEAD&#xa;    Vary: Accept-Encoding&#xa;    Content-Length: 0&#xa;    Connection: close</elem>
+<elem key="RTSPRequest">&#xa;    &lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;&#xa;    &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=utf-8&quot;&gt;&#xa;    &lt;title&gt;Error response&lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;h1&gt;Error response&lt;/h1&gt;&#xa;    &lt;p&gt;Error code: 400&lt;/p&gt;&#xa;    &lt;p&gt;Message: Bad request version (&apos;RTSP/1.0&apos;).&lt;/p&gt;&#xa;    &lt;p&gt;Error code explanation: HTTPStatus.BAD_REQUEST - Bad request syntax or unsupported method.&lt;/p&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+</script></port>
+<port protocol="tcp" portid="4445"><state state="open" reason="syn-ack" reason_ttl="61"/><service name="netbios-ssn" product="Samba smbd" version="4.6.2" method="probed" conf="10"><cpe>cpe:/a:samba:samba:4.6.2</cpe></service></port>
+<port protocol="tcp" portid="5000"><state state="open" reason="syn-ack" reason_ttl="61"/><service name="http" product="nginx" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service><script id="http-robots.txt" output="1 disallowed entry &#xa;/"/><script id="http-title" output="DS918&amp;nbsp;-&amp;nbsp;Synology&amp;nbsp;DiskStation"><elem key="title">DS918&amp;nbsp;-&amp;nbsp;Synology&amp;nbsp;DiskStation</elem>
+</script></port>
+<port protocol="tcp" portid="5001"><state state="open" reason="syn-ack" reason_ttl="61"/><service name="http" product="nginx" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service><script id="http-robots.txt" output="1 disallowed entry &#xa;/"/><script id="http-title" output="DS918&amp;nbsp;-&amp;nbsp;Synology&amp;nbsp;DiskStation"><elem key="title">DS918&amp;nbsp;-&amp;nbsp;Synology&amp;nbsp;DiskStation</elem>
+</script><script id="ssl-cert" output="Subject: commonName=synology/organizationName=Synology Inc./countryName=TW&#xa;Subject Alternative Name: DNS:synology&#xa;Not valid before: 2024-08-18T18:08:52&#xa;Not valid after:  2025-08-19T18:08:52"><table key="subject">
+<elem key="organizationName">Synology Inc.</elem>
+<elem key="countryName">TW</elem>
+<elem key="localityName">Taipei</elem>
+<elem key="commonName">synology</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">Synology Inc.</elem>
+<elem key="countryName">TW</elem>
+<elem key="localityName">Taipei</elem>
+<elem key="commonName">Synology Inc. CA</elem>
+</table>
+<table key="pubkey">
+<elem key="modulus">BIGNUM: 0x5c5646900a78</elem>
+<elem key="exponent">BIGNUM: 0x5c5645228368</elem>
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">DNS:synology</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-08-18T18:08:52</elem>
+<elem key="notAfter">2025-08-19T18:08:52</elem>
+</table>
+<elem key="md5">d9edd833dbaca6463dd7b08ab9944965</elem>
+<elem key="sha1">8456db722573b4b73455e82c8c436fd4254038c7</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDXjCCAkagAwIBAgIUXrFWeNyhZtm6QKTxEFgwsSkrrWwwDQYJKoZIhvcNAQEL&#xa;BQAwUTELMAkGA1UEBhMCVFcxDzANBgNVBAcMBlRhaXBlaTEWMBQGA1UECgwNU3lu&#xa;b2xvZ3kgSW5jLjEZMBcGA1UEAwwQU3lub2xvZ3kgSW5jLiBDQTAeFw0yNDA4MTgx&#xa;ODA4NTJaFw0yNTA4MTkxODA4NTJaMEkxCzAJBgNVBAYTAlRXMQ8wDQYDVQQHDAZU&#xa;YWlwZWkxFjAUBgNVBAoMDVN5bm9sb2d5IEluYy4xETAPBgNVBAMMCHN5bm9sb2d5&#xa;MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsroQUSvNmBNiQcLLmb7Q&#xa;weeobsj/XHgmo0y6THx1n109N2akU/r0KAIk8F6/61GYkvavGfNFulyGdN7qn8AH&#xa;iVw/X9ewTz05VXv4HGb589W3miglSMhqS92lIN0viu5I9Z2RxV0cP7dUnQuT4IVh&#xa;1qRo8fi8hXzLh1UCQKIUNK0EUlVr1deJwjk6boLr1gNwm37WLV9sQIyjA89MJStZ&#xa;hnfmhyNbGpAJkNw4svW+vRdiDpaDl4EHIAYhlwEZQ2Jx5OZ1qiizpiVunP61GDda&#xa;hSu6nc41MiMAPpkEMxx8l+xPL+ztd5kPHZm3btWSVcnz7vBJcGShm7p0L4Mt4el0&#xa;JwIDAQABozYwNDATBgNVHREEDDAKgghzeW5vbG9neTAdBgNVHSUEFjAUBggrBgEF&#xa;BQcDAQYIKwYBBQUHAwIwDQYJKoZIhvcNAQELBQADggEBABNzuO8Jv2zUiAZ6ySGJ&#xa;VyHMLTB3Y9l5W6x5kZP5EDjm9xhIRd2mPHZkGIb3ekW7+9GYz0kfswV/fl9RocDm&#xa;CzwssjP0KhpJDZoUjgU9xn+2IFPB+/rfAGPkrPv7LlGRAul+z5cOdC2rNHvPNA0v&#xa;Hj95I3YsyTDyQOitXLAcSD3PRZDAq6R9IFg9FrSjBxsjrCt5n9gC1I4zIRRAIsSp&#xa;Ei39956NvcpgNgiHw3LsrihTTMcNQ4qliqY+JXpz2YSNd0ERRnQlIUVD35Lk/sAO&#xa;Fkxkae6m7RqeTyRkq7hVYHng7HlOXiQG4tcPXsD/k2TKo+4tmaJKYx05W1YSnqTt&#xa;IQs=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="5900"><state state="filtered" reason="host-unreach" reason_ttl="62"/><service name="vnc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="6669"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="irc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="6779"><state state="filtered" reason="host-unreach" reason_ttl="62"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8085"><state state="open" reason="syn-ack" reason_ttl="61"/><service name="unknown" servicefp="SF-Port8085-TCP:V=7.80%I=7%D=12/4%Time=675010D7%P=x86_64-pc-linux-gnu%r(GetRequest,855,&quot;HTTP/1\.1\x20200\x20OK\r\ncache-control:\x20no-store\r\nconnection:\x20keep-alive\r\ncontent-length:\x201668\r\ncontent-security-policy:\x20default-src\x20&apos;self&apos;;\x20style-src\x20&apos;self&apos;\x20&apos;unsafe-inline&apos;;\x20img-src\x20&apos;self&apos;\x20data:;\x20script-src\x20&apos;self&apos;\x20&apos;unsafe-inline&apos;;\x20object-src\x20&apos;none&apos;;\x20form-action\x20&apos;self&apos;;\r\ncontent-type:\x20text/html\r\ncross-origin-opener-policy:\x20same-origin\r\ndate:\x20Wed,\x2004\x20Dec\x202024\x2008:20:35\x20GMT\r\nreferrer-policy:\x20same-origin\r\nx-content-type-options:\x20nosniff\r\nx-xss-protection:\x201;\x20mode=block\r\n\r\n&lt;!DOCTYPE\x20html&gt;\n&lt;html\x20lang=\&quot;zh\&quot;&gt;\n\n&lt;head&gt;\n\x20\x20\x20\x20&lt;meta\x20charset=\&quot;UTF-8\&quot;\x20/&gt;\n\x20\x20\x20\x20&lt;title&gt;qBittorrent\x20Web\x20UI&lt;/title&gt;\n\x20\x20\x20\x20&lt;link\x20rel=\&quot;icon\&quot;\x20type=\&quot;image/png\&quot;\x20href=\&quot;images/qbittorrent32\.png\&quot;\x20/&gt;\n\x20\x20\x20\x20&lt;link\x20rel=\&quot;icon\&quot;\x20type=\&quot;image/svg\+xml\&quot;\x20href=\&quot;images/qbittorrent-tray\.svg\&quot;\x20/&gt;\n\x20\x20\x20\x20&lt;link\x20rel=\&quot;stylesheet\&quot;\x20type=\&quot;text/css\&quot;\x20href=\&quot;css/login\.css\?v=f1grfx\&quot;\x20/&gt;\n\x20\x20\x20\x20&lt;noscript&gt;\n\x20\x20\x20\x20\x20\x20\x20\x20&lt;link\x20rel=\&quot;stylesheet\&quot;\x20type=\&quot;text/css\&quot;\x20href=\&quot;css/noscript\.css\?v=f1grfx\&quot;\x20/&gt;\n&quot;)%r(FourOhFourRequest,1D5,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nconnection:\x20keep-alive\r\ncontent-length:\x209\r\ncontent-security-policy:\x20default-src\x20&apos;self&apos;;\x20style-src\x20&apos;self&apos;\x20&apos;unsafe-inline&apos;;\x20img-src\x20&apos;self&apos;\x20data:;\x20script-src\x20&apos;self&apos;\x20&apos;unsafe-inline&apos;;\x20object-src\x20&apos;none&apos;;\x20form-action\x20&apos;self&apos;;\r\ncontent-type:\x20text/plain;\x20charset=UTF-8\r\ncross-origin-opener-policy:\x20same-origin\r\ndate:\x20Wed,\x2004\x20Dec\x202024\x2008:20:40\x20GMT\r\nreferrer-policy:\x20same-origin\r\nx-content-type-options:\x20nosniff\r\nx-xss-protection:\x201;\x20mode=block\r\n\r\nNot\x20Found&quot;)%r(GenericLines,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nconnection:\x20close\r\ncontent-length:\x200\r\ndate:\x20Wed,\x2004\x20Dec\x202024\x2008:20:50\x20GMT\r\n\r\n&quot;);" method="table" conf="3"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest: &#xa;    HTTP/1.1 404 Not Found&#xa;    connection: keep-alive&#xa;    content-length: 9&#xa;    content-security-policy: default-src &apos;self&apos;; style-src &apos;self&apos; &apos;unsafe-inline&apos;; img-src &apos;self&apos; data:; script-src &apos;self&apos; &apos;unsafe-inline&apos;; object-src &apos;none&apos;; form-action &apos;self&apos;;&#xa;    content-type: text/plain; charset=UTF-8&#xa;    cross-origin-opener-policy: same-origin&#xa;    date: Wed, 04 Dec 2024 08:20:40 GMT&#xa;    referrer-policy: same-origin&#xa;    x-content-type-options: nosniff&#xa;    x-xss-protection: 1; mode=block&#xa;    Found&#xa;  GenericLines: &#xa;    HTTP/1.1 400 Bad Request&#xa;    connection: close&#xa;    content-length: 0&#xa;    date: Wed, 04 Dec 2024 08:20:50 GMT&#xa;  GetRequest: &#xa;    HTTP/1.1 200 OK&#xa;    cache-control: no-store&#xa;    connection: keep-alive&#xa;    content-length: 1668&#xa;    content-security-policy: default-src &apos;self&apos;; style-src &apos;self&apos; &apos;unsafe-inline&apos;; img-src &apos;self&apos; data:; script-src &apos;self&apos; &apos;unsafe-inline&apos;; object-src &apos;none&apos;; form-action &apos;self&apos;;&#xa;    content-type: text/html&#xa;    cross-origin-opener-policy: same-origin&#xa;    date: Wed, 04 Dec 2024 08:20:35 GMT&#xa;    referrer-policy: same-origin&#xa;    x-content-type-options: nosniff&#xa;    x-xss-protection: 1; mode=block&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html lang=&quot;zh&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta charset=&quot;UTF-8&quot; /&gt;&#xa;    &lt;title&gt;qBittorrent Web UI&lt;/title&gt;&#xa;    &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;images/qbittorrent32.png&quot; /&gt;&#xa;    &lt;link rel=&quot;icon&quot; type=&quot;image/svg+xml&quot; href=&quot;images/qbittorrent-tray.svg&quot; /&gt;&#xa;    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/login.css?v=f1grfx&quot; /&gt;&#xa;    &lt;noscript&gt;&#xa;    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/noscript.css?v=f1grfx&quot; /&gt;"><elem key="FourOhFourRequest">&#xa;    HTTP/1.1 404 Not Found&#xa;    connection: keep-alive&#xa;    content-length: 9&#xa;    content-security-policy: default-src &apos;self&apos;; style-src &apos;self&apos; &apos;unsafe-inline&apos;; img-src &apos;self&apos; data:; script-src &apos;self&apos; &apos;unsafe-inline&apos;; object-src &apos;none&apos;; form-action &apos;self&apos;;&#xa;    content-type: text/plain; charset=UTF-8&#xa;    cross-origin-opener-policy: same-origin&#xa;    date: Wed, 04 Dec 2024 08:20:40 GMT&#xa;    referrer-policy: same-origin&#xa;    x-content-type-options: nosniff&#xa;    x-xss-protection: 1; mode=block&#xa;    Found</elem>
+<elem key="GenericLines">&#xa;    HTTP/1.1 400 Bad Request&#xa;    connection: close&#xa;    content-length: 0&#xa;    date: Wed, 04 Dec 2024 08:20:50 GMT</elem>
+<elem key="GetRequest">&#xa;    HTTP/1.1 200 OK&#xa;    cache-control: no-store&#xa;    connection: keep-alive&#xa;    content-length: 1668&#xa;    content-security-policy: default-src &apos;self&apos;; style-src &apos;self&apos; &apos;unsafe-inline&apos;; img-src &apos;self&apos; data:; script-src &apos;self&apos; &apos;unsafe-inline&apos;; object-src &apos;none&apos;; form-action &apos;self&apos;;&#xa;    content-type: text/html&#xa;    cross-origin-opener-policy: same-origin&#xa;    date: Wed, 04 Dec 2024 08:20:35 GMT&#xa;    referrer-policy: same-origin&#xa;    x-content-type-options: nosniff&#xa;    x-xss-protection: 1; mode=block&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html lang=&quot;zh&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta charset=&quot;UTF-8&quot; /&gt;&#xa;    &lt;title&gt;qBittorrent Web UI&lt;/title&gt;&#xa;    &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;images/qbittorrent32.png&quot; /&gt;&#xa;    &lt;link rel=&quot;icon&quot; type=&quot;image/svg+xml&quot; href=&quot;images/qbittorrent-tray.svg&quot; /&gt;&#xa;    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/login.css?v=f1grfx&quot; /&gt;&#xa;    &lt;noscript&gt;&#xa;    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/noscript.css?v=f1grfx&quot; /&gt;</elem>
+</script></port>
+<port protocol="tcp" portid="9080"><state state="open" reason="syn-ack" reason_ttl="61"/><service name="http" product="nginx" version="1.23.2" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.23.2</cpe></service><script id="http-server-header" output="nginx/1.23.2"><elem>nginx/1.23.2</elem>
+</script><script id="http-title" output="yacd"><elem key="title">yacd</elem>
+</script></port>
+<port protocol="tcp" portid="10001"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="scp-config" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10009"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="swdtp-sv" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10010"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="rxapi" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10012"><state state="filtered" reason="host-unreach" reason_ttl="64"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="20000"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="dnp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="27715"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="30926"/>
+<osmatch name="Linux 2.6.9 - 2.6.27" accuracy="96" line="59009">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.22" accuracy="93" line="51164">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:2.6.22</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.9" accuracy="92" line="58508">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:2.6.9</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.15 - 2.6.26 (likely embedded)" accuracy="92" line="47879">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Zhone GPON home gateway" accuracy="91" line="106696">
+<osclass type="broadband router" vendor="Zhone" osfamily="embedded" accuracy="91"/>
+</osmatch>
+<osmatch name="Dell DR4100 backup appliance" accuracy="91" line="22179">
+<osclass type="storage-misc" vendor="Dell" osfamily="embedded" accuracy="91"><cpe>cpe:/h:dell:dr4100</cpe></osclass>
+</osmatch>
+<osmatch name="Cisco SA520 firewall (Linux 2.6)" accuracy="91" line="47072">
+<osclass type="firewall" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+<osclass type="firewall" vendor="Cisco" osfamily="embedded" accuracy="91"><cpe>cpe:/h:cisco:sa520</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.18" accuracy="91" line="48810">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:2.6.18</cpe></osclass>
+</osmatch>
+<osmatch name="Ruckus 7363 WAP" accuracy="90" line="95125">
+<osclass type="WAP" vendor="Ruckus" osfamily="embedded" accuracy="90"><cpe>cpe:/h:ruckus:7363</cpe></osclass>
+</osmatch>
+<osmatch name="Dell Integrated Remote Access Controller (iDRAC9)" accuracy="90" line="21981">
+<osclass type="remote management" vendor="Dell" osfamily="embedded" accuracy="90"/>
+</osmatch>
+</os>
+<uptime seconds="2125" lastboot="Wed Dec  4 16:56:10 2024"/>
+<distance value="3"/>
+<tcpsequence index="197" difficulty="Good luck!" values="AF039337,12AEF000,33F1091A,F70AD279,8C56E853,5A089F9F"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="37C88,3CFC5,42302,4763F,4C97C,51CB9"/>
+<trace port="1025" proto="tcp">
+<hop ttl="1" ipaddr="192.168.40.2" rtt="0.23" host="_gateway"/>
+<hop ttl="3" ipaddr="10.12.188.210" rtt="1.16"/>
+</trace>
+<times srtt="1102" rttvar="92" to="400000"/>
+</host>
+<host starttime="1733274102" endtime="1733304695"><status state="up" reason="echo-reply" reason_ttl="62"/>
+<address addr="10.12.188.215" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="978">
+<extrareasons reason="resets" count="978"/>
+</extraports>
+<port protocol="tcp" portid="20"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ftp-data" method="table" conf="3"/></port>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="ftp" product="Serv-U ftpd" version="15.2.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:serv-u:serv-u:15.2.0</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ssl-cert" output="Subject: commonName=ftp.Serv-U.com/organizationName=Rhino Software, Inc./stateOrProvinceName=WI/countryName=US&#xa;Not valid before: 2020-05-13T17:27:39&#xa;Not valid after:  2030-05-11T17:27:39"><table key="subject">
+<elem key="organizationName">Rhino Software, Inc.</elem>
+<elem key="localityName">Helenville</elem>
+<elem key="stateOrProvinceName">WI</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationalUnitName">Software Development</elem>
+<elem key="commonName">ftp.Serv-U.com</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">Rhino Software, Inc.</elem>
+<elem key="localityName">Helenville</elem>
+<elem key="stateOrProvinceName">WI</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationalUnitName">Software Development</elem>
+<elem key="commonName">ftp.Serv-U.com</elem>
+</table>
+<table key="pubkey">
+<elem key="modulus">BIGNUM: 0x5c5644696c88</elem>
+<elem key="exponent">BIGNUM: 0x5c5644696c48</elem>
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2020-05-13T17:27:39</elem>
+<elem key="notAfter">2030-05-11T17:27:39</elem>
+</table>
+<elem key="md5">ab3ba7506554e92ffc4659f3f4564aad</elem>
+<elem key="sha1">bd9d9a2bfebbef0de39544eb654ac375c5872512</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDhzCCAm+gAwIBAgIBADANBgkqhkiG9w0BAQUFADCBhjELMAkGA1UEBhMCVVMx&#xa;CzAJBgNVBAgMAldJMRMwEQYDVQQHDApIZWxlbnZpbGxlMR0wGwYDVQQKDBRSaGlu&#xa;byBTb2Z0d2FyZSwgSW5jLjEdMBsGA1UECwwUU29mdHdhcmUgRGV2ZWxvcG1lbnQx&#xa;FzAVBgNVBAMMDmZ0cC5TZXJ2LVUuY29tMB4XDTIwMDUxMzE3MjczOVoXDTMwMDUx&#xa;MTE3MjczOVowgYYxCzAJBgNVBAYTAlVTMQswCQYDVQQIDAJXSTETMBEGA1UEBwwK&#xa;SGVsZW52aWxsZTEdMBsGA1UECgwUUmhpbm8gU29mdHdhcmUsIEluYy4xHTAbBgNV&#xa;BAsMFFNvZnR3YXJlIERldmVsb3BtZW50MRcwFQYDVQQDDA5mdHAuU2Vydi1VLmNv&#xa;bTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALFxTxdhuxGykZQklm9y&#xa;iYv1668SGqXBNdUYcFG8rmwccYyOPftx49LCzHlSxgUuiqrIpye578aT/8FTBQBK&#xa;KkHhNoveCHF7qoYX8s0nkqasaeqM8pyStMN+6tPSxyANAHZCL2aMrs6IUWuk00XF&#xa;6XLp0kPn3F4VrW5X2VTqnt/qQedcD2THnrViSEhPANa885M8F9jFPiLVoF5mdL6a&#xa;YkAKoDA0BMBI6Mk9doGH8VRBo9i6bVrGtdz/u0YEHA3fNdbxucVboO5Pyj3vDPL+&#xa;/vMWDo6hb/YIJ0XzXrYWUrfXyA6K1uxItlT31/m44vE/tXfVqwAERX3feUJ7MX8C&#xa;PXMCAwEAATANBgkqhkiG9w0BAQUFAAOCAQEAW3XnSQM19gOU/NWdgabzEo+BdMiJ&#xa;fR/w0uxQ8rEYvlPqaJ1/YylWT/MSIxXaUq4N4MHlXMPEVt9MwFZbKwK5pZO8w33J&#xa;dBoiYcNCQmLqkbyBX+6M/Bi7GtLqBp6n4gYXr2FuV3pJ/acrOLFTJtG+nej1Jjz6&#xa;GMYrNe649aXQl4bL/xdAOJ5ANBhz/3uA+WlkA/YHuU12SKaqB/XO+80N5dV6LJSK&#xa;z7e8CiBM2nLbplvtJqDA1wwhHA8+gJbiMIDdnyuy4mOh9IMCssZMvViiwFVomSbJ&#xa;GKt5vxAbBjef6+IdnjxcZxiPVmVto/7N+g1/DWlnrtrbGHtYSV0ZXzw3+Q==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="25"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="smtp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="http" servicefp="SF-Port80-TCP:V=7.80%I=7%D=12/4%Time=67501160%P=x86_64-pc-linux-gnu%r(GetRequest,43,&quot;HTTP/1\.0\x20302\x20Found\r\nConnection:\x20close\r\nLocation:\x20/cgi-bin/luci/\r\n\r\n&quot;)%r(HTTPOptions,43,&quot;HTTP/1\.0\x20302\x20Found\r\nConnection:\x20close\r\nLocation:\x20/cgi-bin/luci/\r\n\r\n&quot;)%r(RTSPRequest,79,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\nConnection:\x20Keep-Alive\r\nKeep-Alive:\x20timeout=20\r\nContent-Type:\x20text/html\r\n\r\n&lt;h1&gt;Bad\x20Request&lt;/h1&gt;&quot;)%r(FourOhFourRequest,AC,&quot;HTTP/1\.0\x20404\x20Not\x20Found\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n&lt;h1&gt;Not\x20Found&lt;/h1&gt;The\x20requested\x20URL\x20/nice%20ports%2C/Tri%6Eity\.txt%2ebak\x20was\x20not\x20found\x20on\x20this\x20server\.&quot;)%r(Help,79,&quot;HTTP/0\.9\x20400\x20Bad\x20Request\r\nConnection:\x20Keep-Alive\r\nKeep-Alive:\x20timeout=20\r\nContent-Type:\x20text/html\r\n\r\n&lt;h1&gt;Bad\x20Request&lt;/h1&gt;&quot;)%r(SIPOptions,79,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\nConnection:\x20Keep-Alive\r\nKeep-Alive:\x20timeout=20\r\nContent-Type:\x20text/html\r\n\r\n&lt;h1&gt;Bad\x20Request&lt;/h1&gt;&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest: &#xa;    HTTP/1.0 404 Not Found&#xa;    Connection: close&#xa;    Content-Type: text/html&#xa;    &lt;h1&gt;Not Found&lt;/h1&gt;The requested URL /nice%20ports%2C/Tri%6Eity.txt%2ebak was not found on this server.&#xa;  GetRequest, HTTPOptions: &#xa;    HTTP/1.0 302 Found&#xa;    Connection: close&#xa;    Location: /cgi-bin/luci/&#xa;  Help: &#xa;    HTTP/0.9 400 Bad Request&#xa;    Connection: Keep-Alive&#xa;    Keep-Alive: timeout=20&#xa;    Content-Type: text/html&#xa;    &lt;h1&gt;Bad Request&lt;/h1&gt;&#xa;  RTSPRequest, SIPOptions: &#xa;    HTTP/1.0 400 Bad Request&#xa;    Connection: Keep-Alive&#xa;    Keep-Alive: timeout=20&#xa;    Content-Type: text/html&#xa;    &lt;h1&gt;Bad Request&lt;/h1&gt;"><elem key="FourOhFourRequest">&#xa;    HTTP/1.0 404 Not Found&#xa;    Connection: close&#xa;    Content-Type: text/html&#xa;    &lt;h1&gt;Not Found&lt;/h1&gt;The requested URL /nice%20ports%2C/Tri%6Eity.txt%2ebak was not found on this server.</elem>
+<elem key="GetRequest, HTTPOptions">&#xa;    HTTP/1.0 302 Found&#xa;    Connection: close&#xa;    Location: /cgi-bin/luci/</elem>
+<elem key="Help">&#xa;    HTTP/0.9 400 Bad Request&#xa;    Connection: Keep-Alive&#xa;    Keep-Alive: timeout=20&#xa;    Content-Type: text/html&#xa;    &lt;h1&gt;Bad Request&lt;/h1&gt;</elem>
+<elem key="RTSPRequest, SIPOptions">&#xa;    HTTP/1.0 400 Bad Request&#xa;    Connection: Keep-Alive&#xa;    Keep-Alive: timeout=20&#xa;    Content-Type: text/html&#xa;    &lt;h1&gt;Bad Request&lt;/h1&gt;</elem>
+</script><script id="http-title" output="    BleachWrt - LuCI    &#xa;Requested resource was /cgi-bin/luci/"><elem key="title">&#xa;    BleachWrt - LuCI&#xa;    </elem>
+<elem key="redirect_url">/cgi-bin/luci/</elem>
+</script></port>
+<port protocol="tcp" portid="88"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="http" product="Rhinosoft Serv-U httpd" version="15.2.0.443" method="probed" conf="10"><cpe>cpe:/a:serv-u:serv-u:15.2.0.443</cpe></service><script id="http-server-header" output="Serv-U/15.2.0.443"><elem>Serv-U/15.2.0.443</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html)."><elem key="title"></elem>
+</script><script id="http-trane-info" output="Problem with XML parsing of /evox/about"/></port>
+<port protocol="tcp" portid="100"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="newacct" method="table" conf="3"/></port>
+<port protocol="tcp" portid="135"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="https" servicefp="SF-Port443-TCP:V=7.80%T=SSL%I=7%D=12/4%Time=675011E6%P=x86_64-pc-linux-gnu%r(GetRequest,43,&quot;HTTP/1\.0\x20302\x20Found\r\nConnection:\x20close\r\nLocation:\x20/cgi-bin/luci/\r\n\r\n&quot;)%r(HTTPOptions,43,&quot;HTTP/1\.0\x20302\x20Found\r\nConnection:\x20close\r\nLocation:\x20/cgi-bin/luci/\r\n\r\n&quot;);" tunnel="ssl" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  GetRequest, HTTPOptions: &#xa;    HTTP/1.0 302 Found&#xa;    Connection: close&#xa;    Location: /cgi-bin/luci/"><elem key="GetRequest, HTTPOptions">&#xa;    HTTP/1.0 302 Found&#xa;    Connection: close&#xa;    Location: /cgi-bin/luci/</elem>
+</script><script id="http-title" output="    BleachWrt - LuCI    &#xa;Requested resource was /cgi-bin/luci/"><elem key="title">&#xa;    BleachWrt - LuCI&#xa;    </elem>
+<elem key="redirect_url">/cgi-bin/luci/</elem>
+</script><script id="ssl-cert" output="Subject: commonName=OpenWrt/organizationName=OpenWrtb73a6135/stateOrProvinceName=Somewhere/countryName=ZZ&#xa;Not valid before: 2023-10-03T04:04:02&#xa;Not valid after:  2025-10-02T04:04:02"><table key="subject">
+<elem key="organizationName">OpenWrtb73a6135</elem>
+<elem key="localityName">Unknown</elem>
+<elem key="stateOrProvinceName">Somewhere</elem>
+<elem key="countryName">ZZ</elem>
+<elem key="commonName">OpenWrt</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">OpenWrtb73a6135</elem>
+<elem key="localityName">Unknown</elem>
+<elem key="stateOrProvinceName">Somewhere</elem>
+<elem key="countryName">ZZ</elem>
+<elem key="commonName">OpenWrt</elem>
+</table>
+<table key="pubkey">
+<elem key="type">ec</elem>
+<elem key="bits">256</elem>
+<table key="ecdhparams">
+<table key="curve_params">
+<elem key="ec_curve_type">namedcurve</elem>
+<elem key="curve">prime256v1</elem>
+</table>
+</table>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">B8:70:71:97:41:22:C1:AE:30:EF:B0:BA:59:4E:F6:5B:B5:44:6F:4F</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">B8:70:71:97:41:22:C1:AE:30:EF:B0:BA:59:4E:F6:5B:B5:44:6F:4F</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">CA:TRUE</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+</table>
+<elem key="sig_algo">ecdsa-with-SHA256</elem>
+<table key="validity">
+<elem key="notBefore">2023-10-03T04:04:02</elem>
+<elem key="notAfter">2025-10-02T04:04:02</elem>
+</table>
+<elem key="md5">ac1a7fb5d6047d82b381800fd2b99439</elem>
+<elem key="sha1">d71b2947ea4e6056bcfcfe7faf5280e325541281</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIICEzCCAbmgAwIBAgIUeX1jY0gD+SUlrZgYzI2tMhxM8VEwCgYIKoZIzj0EAwIw&#xa;XzELMAkGA1UEBhMCWloxEjAQBgNVBAgMCVNvbWV3aGVyZTEQMA4GA1UEBwwHVW5r&#xa;bm93bjEYMBYGA1UECgwPT3BlbldydGI3M2E2MTM1MRAwDgYDVQQDDAdPcGVuV3J0&#xa;MB4XDTIzMTAwMzA0MDQwMloXDTI1MTAwMjA0MDQwMlowXzELMAkGA1UEBhMCWlox&#xa;EjAQBgNVBAgMCVNvbWV3aGVyZTEQMA4GA1UEBwwHVW5rbm93bjEYMBYGA1UECgwP&#xa;T3BlbldydGI3M2E2MTM1MRAwDgYDVQQDDAdPcGVuV3J0MFkwEwYHKoZIzj0CAQYI&#xa;KoZIzj0DAQcDQgAEPanHt9y2SPsKgGi7K1vxfK1tVB1SzUT0TYKt+308NjOoojfX&#xa;ApH/LMwe2DEg9XStEWXdorZlWY4ncfMFygKgs6NTMFEwHQYDVR0OBBYEFLhwcZdB&#xa;IsGuMO+wullO9lu1RG9PMB8GA1UdIwQYMBaAFLhwcZdBIsGuMO+wullO9lu1RG9P&#xa;MA8GA1UdEwEB/wQFMAMBAf8wCgYIKoZIzj0EAwIDSAAwRQIhAIMRZqn74BZugCRD&#xa;pS/pemEoyqtMR+Trq+wIEbFfx9twAiBNlUtuCRl38NlUc4GgVGd3gO+OgWhrmrRR&#xa;WAvuVmkoYA==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="445"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="563"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="snews" method="table" conf="3"/></port>
+<port protocol="tcp" portid="880"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5900"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="vnc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="7019"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="doceri-ctl" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10001"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="scp-config" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10009"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="swdtp-sv" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10010"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="rxapi" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10012"><state state="filtered" reason="host-unreach" reason_ttl="64"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="20000"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="dnp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="45100"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="65129"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="31819"/>
+<osmatch name="Linux 2.4.21" accuracy="91" line="45290">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:2.4.21</cpe></osclass>
+</osmatch>
+<osmatch name="Motorola RFS4000 wireless controller" accuracy="90" line="86279">
+<osclass type="remote management" vendor="Motorola" osfamily="embedded" accuracy="90"><cpe>cpe:/h:motorola:rfs4000</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.18 - 2.6.22" accuracy="89" line="49721">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.9" accuracy="88" line="58508">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:2.6.9</cpe></osclass>
+</osmatch>
+<osmatch name="Cisco SA520 firewall (Linux 2.6)" accuracy="88" line="47072">
+<osclass type="firewall" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+<osclass type="firewall" vendor="Cisco" osfamily="embedded" accuracy="88"><cpe>cpe:/h:cisco:sa520</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.9 - 2.6.27" accuracy="88" line="59009">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Ruckus 7363 WAP" accuracy="87" line="95125">
+<osclass type="WAP" vendor="Ruckus" osfamily="embedded" accuracy="87"><cpe>cpe:/h:ruckus:7363</cpe></osclass>
+</osmatch>
+<osmatch name="FreeBSD 6.2-RELEASE" accuracy="87" line="27364">
+<osclass type="general purpose" vendor="FreeBSD" osfamily="FreeBSD" osgen="6.X" accuracy="87"><cpe>cpe:/o:freebsd:freebsd:6.2</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.18" accuracy="87" line="49432">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="87"><cpe>cpe:/o:linux:linux_kernel:2.6.18</cpe></osclass>
+</osmatch>
+<osmatch name="Riverbed Steelhead 200 proxy server" accuracy="87" line="94857">
+<osclass type="proxy server" vendor="Riverbed" osfamily="embedded" accuracy="87"><cpe>cpe:/h:riverbed:steelhead_200</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="658553" lastboot="Wed Nov 27 02:35:42 2024"/>
+<distance value="3"/>
+<tcpsequence index="198" difficulty="Good luck!" values="4DD8A550,7D5A0E07,6FF2BEC3,D8ADAB58,295AF84D,D050ED74"/>
+<ipidsequence class="Incremental" values="1E19,1E1A,1E1B,1E1C,1E1D,1E1E"/>
+<tcptssequence class="1000HZ" values="2723C9C4,27241D01,2724703E,2724C37B,272516B9,272569F6"/>
+<trace port="995" proto="tcp">
+<hop ttl="1" ipaddr="192.168.40.2" rtt="0.23" host="_gateway"/>
+<hop ttl="3" ipaddr="10.12.188.215" rtt="1.01"/>
+</trace>
+<times srtt="1274" rttvar="281" to="400000"/>
+</host>
+<host starttime="1733274218" endtime="1733304695"><status state="up" reason="reset" reason_ttl="62"/>
+<address addr="10.12.188.237" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="990">
+<extrareasons reason="resets" count="990"/>
+</extraports>
+<port protocol="tcp" portid="135"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3390"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="ms-wbt-server" product="Microsoft Terminal Services" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="rdp-ntlm-info" output="&#xa;  Target_Name: DESKTOP-Q271TBK&#xa;  NetBIOS_Domain_Name: DESKTOP-Q271TBK&#xa;  NetBIOS_Computer_Name: DESKTOP-Q271TBK&#xa;  DNS_Domain_Name: DESKTOP-Q271TBK&#xa;  DNS_Computer_Name: DESKTOP-Q271TBK&#xa;  Product_Version: 10.0.19041&#xa;  System_Time: 2024-12-04T09:29:24+00:00"><elem key="Target_Name">DESKTOP-Q271TBK</elem>
+<elem key="NetBIOS_Domain_Name">DESKTOP-Q271TBK</elem>
+<elem key="NetBIOS_Computer_Name">DESKTOP-Q271TBK</elem>
+<elem key="DNS_Domain_Name">DESKTOP-Q271TBK</elem>
+<elem key="DNS_Computer_Name">DESKTOP-Q271TBK</elem>
+<elem key="Product_Version">10.0.19041</elem>
+<elem key="System_Time">2024-12-04T09:29:24+00:00</elem>
+</script><script id="ssl-cert" output="Subject: commonName=DESKTOP-Q271TBK&#xa;Not valid before: 2024-09-27T20:05:57&#xa;Not valid after:  2025-03-29T20:05:57"><table key="subject">
+<elem key="commonName">DESKTOP-Q271TBK</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">DESKTOP-Q271TBK</elem>
+</table>
+<table key="pubkey">
+<elem key="modulus">BIGNUM: 0x5c5646259278</elem>
+<elem key="exponent">BIGNUM: 0x5c56467d89c8</elem>
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">TLS Web Server Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-09-27T20:05:57</elem>
+<elem key="notAfter">2025-03-29T20:05:57</elem>
+</table>
+<elem key="md5">dd5eeb13409b4f79eb4c655bddbb396f</elem>
+<elem key="sha1">1e3307aac6521d6887f0ff8455f86fd9125e7a59</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC4jCCAcqgAwIBAgIQLT3YL3hk7LZIIDNGleqscTANBgkqhkiG9w0BAQsFADAa&#xa;MRgwFgYDVQQDEw9ERVNLVE9QLVEyNzFUQkswHhcNMjQwOTI3MjAwNTU3WhcNMjUw&#xa;MzI5MjAwNTU3WjAaMRgwFgYDVQQDEw9ERVNLVE9QLVEyNzFUQkswggEiMA0GCSqG&#xa;SIb3DQEBAQUAA4IBDwAwggEKAoIBAQC8Q7fr31kpcn+YyTW0JFqfa2aEyzws1obK&#xa;aPb0JNTaoN2TgFrFIjYAuSIt3DESJGlLr+WGPipwVrjy6kj1Mk9GNlgFQxpcIUIo&#xa;gN95nfPGCeNADWdePnshj4ScRUvAE8nxi9EUK9kwaCq5b9j5zv60nVsHXQZ3Vq6V&#xa;Gm9LabT1jyrjfn/v7ssfmt+iTZYsJ/Rb96ljD+0/Snw3HUuasnyLN7vT3RT3nzCG&#xa;5h2orxOvs6di0pnMbc+tqUrMG3bq/cp8p5PqRauy8bQ5z3yCHr1dSxw7Hm8tLqo7&#xa;HhWxwaSKnOU/w6Jir5Zk3u6UK5fyxvtB8lZdS83K+hhmw3NPKfQtAgMBAAGjJDAi&#xa;MBMGA1UdJQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG9w0BAQsF&#xa;AAOCAQEAhK5EIyCCpMFp+8Oxvftc22PaIAKWY7j4b+NcMb59fASJE40taP7VMaKK&#xa;0MVxUOPmDXZJHnQcQ+8f0jt6cfOGvHJP3ufsoeOE3fEYg9HeG5WblQz8AfjgX4ZD&#xa;hHBiTyZrSkrzNzX8RhTlKVRAcUmNTuYpb9kT+IXk3G4w4h0+qTGJDMr4tOZ9bZvk&#xa;Grl5ap7GHZor/MiRvdCadi0K9A47mTuutpduPLf8Gdd7nJoB601u88fepWawurdt&#xa;2cZw8dgmVo7cEEBnJpTvhCPwrmiIuPNQnX8qWbKDxipjCcZJ6ypbh1TsGfPPcldS&#xa;Lw6XY2EbL06KRzGY3N+2NOh9AFO58g==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2024-12-04T09:31:21+00:00; +1s from scanner time."><elem key="delta">1.0</elem>
+<elem key="date">2024-12-04T09:31:21+00:00</elem>
+</script></port>
+<port protocol="tcp" portid="5900"><state state="open" reason="syn-ack" reason_ttl="61"/><service name="vnc" product="Apple remote desktop vnc" ostype="Mac OS X" method="probed" conf="10"><cpe>cpe:/o:apple:mac_os_x</cpe></service><script id="ssl-cert" output="ERROR: Script execution failed (use -d to debug)"/><script id="ssl-date" output="ERROR: Script execution failed (use -d to debug)"/><script id="sslv2" output="ERROR: Script execution failed (use -d to debug)"/><script id="tls-alpn" output="ERROR: Script execution failed (use -d to debug)"/><script id="tls-nextprotoneg" output="ERROR: Script execution failed (use -d to debug)"/><script id="vnc-info" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="10001"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="scp-config" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10009"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="swdtp-sv" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10010"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="rxapi" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10012"><state state="filtered" reason="host-unreach" reason_ttl="64"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="20000"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="dnp" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="3390"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="43500"/>
+<osmatch name="Microsoft Windows Server 2008 SP1 or Windows Server 2008 R2" accuracy="88" line="74830">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="88"><cpe>cpe:/o:microsoft:windows_server_2008::sp1</cpe><cpe>cpe:/o:microsoft:windows_server_2008:r2</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.18 - 2.6.22" accuracy="88" line="49721">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 7" accuracy="87" line="75938">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="87"><cpe>cpe:/o:microsoft:windows_7</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.24 (Gentoo)" accuracy="86" line="52198">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="86"><cpe>cpe:/o:linux:linux_kernel:2.6.24</cpe></osclass>
+</osmatch>
+<osmatch name="OpenWrt Backfire 10.03.1 (Linux 2.6)" accuracy="85" line="61215">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="85"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Motorola RFS 6000 wireless switch" accuracy="85" line="86370">
+<osclass type="WAP" vendor="Motorola" osfamily="embedded" accuracy="85"><cpe>cpe:/h:motorola:rfs_6000</cpe></osclass>
+</osmatch>
+<osmatch name="OpenWrt (Linux 2.4.32)" accuracy="85" line="46483">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="85"><cpe>cpe:/o:linux:linux_kernel:2.4.32</cpe></osclass>
+</osmatch>
+<osmatch name="ZyXEL ZyWALL USG 20 or USG 50 firewall (ZyNOS 2.21)" accuracy="85" line="107061">
+<osclass type="firewall" vendor="ZyXEL" osfamily="ZyNOS" osgen="2.X" accuracy="85"><cpe>cpe:/o:zyxel:zynos:2.21</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.4.21" accuracy="85" line="45308">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="85"><cpe>cpe:/o:linux:linux_kernel:2.4.21</cpe></osclass>
+</osmatch>
+<osmatch name="Endian 2.3 or IPCop firewall 1.4.10 - 1.4.21 (Linux 2.4.31 - 2.6.22)" accuracy="85" line="47097">
+<osclass type="firewall" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="85"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+<osclass type="firewall" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="85"><cpe>cpe:/o:linux:linux_kernel:2.4</cpe></osclass>
+<osclass type="firewall" vendor="Endian" osfamily="embedded" accuracy="85"><cpe>cpe:/a:endian:firewall:2.3</cpe></osclass>
+<osclass type="firewall" vendor="IPCop" osfamily="embedded" accuracy="85"><cpe>cpe:/o:ipcop:ipcop:1.4</cpe></osclass>
+</osmatch>
+</os>
+<distance value="3"/>
+<tcpsequence index="198" difficulty="Good luck!" values="80DF5A1C,42E9D36F,A4D56BF2,B6A14054,A013C933,52EADF3D"/>
+<ipidsequence class="Incremental" values="887C,887D,887E,887F,8880,8881"/>
+<tcptssequence class="none returned (unsupported)"/>
+<trace port="1025" proto="tcp">
+<hop ttl="1" ipaddr="192.168.40.2" rtt="0.23" host="_gateway"/>
+<hop ttl="3" ipaddr="10.12.188.237" rtt="0.73"/>
+</trace>
+<times srtt="1623" rttvar="793" to="400000"/>
+</host>
+<host starttime="1733274144" endtime="1733304695"><status state="up" reason="echo-reply" reason_ttl="62"/>
+<address addr="10.12.188.242" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="991">
+<extrareasons reason="resets" count="991"/>
+</extraports>
+<port protocol="tcp" portid="135"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="6779"><state state="open" reason="syn-ack" reason_ttl="125"/><service name="unknown" tunnel="ssl" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=Laptop-Qeryu&#xa;Not valid before: 2024-09-23T12:03:21&#xa;Not valid after:  2025-03-25T12:03:21"><table key="subject">
+<elem key="commonName">Laptop-Qeryu</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">Laptop-Qeryu</elem>
+</table>
+<table key="pubkey">
+<elem key="modulus">BIGNUM: 0x5c5645fd2a48</elem>
+<elem key="exponent">BIGNUM: 0x5c5645fd29c8</elem>
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">TLS Web Server Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-09-23T12:03:21</elem>
+<elem key="notAfter">2025-03-25T12:03:21</elem>
+</table>
+<elem key="md5">62c05f21dca61df8d36f4f92668cf472</elem>
+<elem key="sha1">939718eb22110b82fa07bc86ef5c4201ddb776b3</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC3DCCAcSgAwIBAgIQHplrPCfBrI1D++fxXLL+pTANBgkqhkiG9w0BAQsFADAX&#xa;MRUwEwYDVQQDEwxMYXB0b3AtUWVyeXUwHhcNMjQwOTIzMTIwMzIxWhcNMjUwMzI1&#xa;MTIwMzIxWjAXMRUwEwYDVQQDEwxMYXB0b3AtUWVyeXUwggEiMA0GCSqGSIb3DQEB&#xa;AQUAA4IBDwAwggEKAoIBAQC9XNS5/Vtqf3/QtW+1m4t2uBXUDt9/hriuDWkZEdGL&#xa;ygkBnpsWZghAMBGswuxmxajKj687dmCHav/FhlQI0gwv3+k7hlGNuHSNZC/E+Kyd&#xa;EvvjxRTmGC19fWlPgMhx8wtVC/geOlHEGkmh4jYEWUSYlDVny/r/SqorErZVi8v0&#xa;sh2o8Wb6SjVsDROQRmUBkmtq4zeDwcuZEupjmM5q9CWqj7AbztlbV0Za6tnscXeG&#xa;Aimtj7sgtPaNDp3AVAmmN426S38ZDTH8A9BHL9qg/ATqhPKO3tiEmVXhjxcFJX3j&#xa;8onaqvRp15DbPIovkrX9QmGHZCCAIQekTlekOx7PJIbdAgMBAAGjJDAiMBMGA1Ud&#xa;JQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG9w0BAQsFAAOCAQEA&#xa;eJtdng6osfgrAMDsVWdr8Hn1gAUFssqHiv1bqW9Ab9E9WnnQrw4h2gnNFhHWwVVk&#xa;te5znhiO1LgeAJVnx6IBTlv/pTfXTTORi2u7WZBEqFY6PQY91lmgB9gFfY+dZjOd&#xa;dgDhH1sYwTO8gfzyVsXq8wBJqkNjXF1nLwqsl/cC9Wk74095IYh6ZgBd9ETb1MLC&#xa;BzW1CPJ9v1DbuR6YtXtujNcHx5WTQFmUTwOxajGskwG523pDHjZeZ3jqpA9L+ggS&#xa;XkoUgmltMDCmYKkoV6W6w7applzNDwF2fao66axekqnBjjg501IhBR1hGEseAQS9&#xa;FwCkjQFLQ+74OJzwMpXDNQ==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2024-12-04T09:31:35+00:00; +1s from scanner time."><elem key="delta">1.0</elem>
+<elem key="date">2024-12-04T09:31:35+00:00</elem>
+</script></port>
+<port protocol="tcp" portid="10001"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="scp-config" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10009"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="swdtp-sv" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10010"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="rxapi" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10012"><state state="filtered" reason="host-unreach" reason_ttl="64"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="20000"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="dnp" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="6779"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="32659"/>
+<osmatch name="Cisco Unified Communications Manager VoIP adapter" accuracy="94" line="14715">
+<osclass type="VoIP adapter" vendor="Cisco" osfamily="embedded" accuracy="94"><cpe>cpe:/h:cisco:unified_call_manager</cpe></osclass>
+</osmatch>
+<osmatch name="Android 7.1.2 (Linux 3.10)" accuracy="94" line="31423">
+<osclass type="phone" vendor="Google" osfamily="Android" osgen="7.X" accuracy="94"><cpe>cpe:/o:google:android:7.1.2</cpe></osclass>
+<osclass type="phone" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:3.10</cpe></osclass>
+</osmatch>
+<osmatch name="DD-WRT v23 (Linux 2.4.36)" accuracy="94" line="46200">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.4.36</cpe></osclass>
+</osmatch>
+<osmatch name="Vyatta router (Linux 2.6.26)" accuracy="94" line="47225">
+<osclass type="firewall" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.26</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.18" accuracy="94" line="48774">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.18</cpe></osclass>
+</osmatch>
+<osmatch name="Tomato firmware (Linux 2.6.22)" accuracy="94" line="61430">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.22</cpe></osclass>
+</osmatch>
+<osmatch name="MikroTik RouterOS 5.25 (Linux 2.6.35)" accuracy="94" line="85279">
+<osclass type="router" vendor="MikroTik" osfamily="RouterOS" osgen="5.X" accuracy="94"><cpe>cpe:/o:mikrotik:routeros:5.25</cpe></osclass>
+<osclass type="router" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.35</cpe></osclass>
+</osmatch>
+<osmatch name="Netgear ReadyNAS Duo NAS device (RAIDiator 4.1.4)" accuracy="94" line="88079">
+<osclass type="storage-misc" vendor="Netgear" osfamily="RAIDiator" osgen="4.X" accuracy="94"><cpe>cpe:/o:netgear:raidiator:4.1.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.28" accuracy="92" line="53371">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:2.6.28</cpe></osclass>
+</osmatch>
+<osmatch name="Lexmark Z2400 printer" accuracy="91" line="43312">
+<osclass type="printer" vendor="Lexmark" osfamily="embedded" accuracy="91"><cpe>cpe:/h:lexmark:z2400</cpe></osclass>
+</osmatch>
+</os>
+<distance value="3"/>
+<trace port="1025" proto="tcp">
+<hop ttl="1" ipaddr="192.168.40.2" rtt="0.23" host="_gateway"/>
+<hop ttl="3" ipaddr="10.12.188.242" rtt="0.87"/>
+</trace>
+<times srtt="956" rttvar="70" to="400000"/>
+</host>
+<host starttime="1733274108" endtime="1733304695"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.12.188.254" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="990">
+<extrareasons reason="resets" count="990"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="tcpwrapped" method="probed" conf="8"/><script id="ssh-hostkey" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="135"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3333"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="postgresql" product="PostgreSQL DB" servicefp="SF-Port3333-TCP:V=7.80%I=7%D=12/4%Time=675012BF%P=x86_64-pc-linux-gnu%r(Kerberos,85,&quot;E\0\0\0\x84SFATAL\0C0A000\0Munsupported\x20frontend\x20protocol\x2027265\.28208:\x20server\x20supports\x201\.0\x20to\x203\.0\0Fpostmaster\.c\0L1724\0RProcessStartupPacket\0\0&quot;)%r(SMBProgNeg,85,&quot;E\0\0\0\x84SFATAL\0C0A000\0Munsupported\x20frontend\x20protocol\x2065363\.19778:\x20server\x20supports\x201\.0\x20to\x203\.0\0Fpostmaster\.c\0L1724\0RProcessStartupPacket\0\0&quot;);" method="probed" conf="10"><cpe>cpe:/a:postgresql:postgresql</cpe></service><script id="fingerprint-strings" output="&#xa;  Kerberos: &#xa;    SFATAL&#xa;    C0A000&#xa;    Munsupported frontend protocol 27265.28208: server supports 1.0 to 3.0&#xa;    Fpostmaster.c&#xa;    L1724&#xa;    RProcessStartupPacket&#xa;  SMBProgNeg: &#xa;    SFATAL&#xa;    C0A000&#xa;    Munsupported frontend protocol 65363.19778: server supports 1.0 to 3.0&#xa;    Fpostmaster.c&#xa;    L1724&#xa;    RProcessStartupPacket"><elem key="Kerberos">&#xa;    SFATAL&#xa;    C0A000&#xa;    Munsupported frontend protocol 27265.28208: server supports 1.0 to 3.0&#xa;    Fpostmaster.c&#xa;    L1724&#xa;    RProcessStartupPacket</elem>
+<elem key="SMBProgNeg">&#xa;    SFATAL&#xa;    C0A000&#xa;    Munsupported frontend protocol 65363.19778: server supports 1.0 to 3.0&#xa;    Fpostmaster.c&#xa;    L1724&#xa;    RProcessStartupPacket</elem>
+</script></port>
+<port protocol="tcp" portid="10001"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="scp-config" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10009"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="swdtp-sv" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10010"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="rxapi" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10012"><state state="filtered" reason="host-unreach" reason_ttl="64"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="20000"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="dnp" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="3333"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="38100"/>
+<osmatch name="DD-WRT v23 (Linux 2.4.34)" accuracy="94" line="46182">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.4.34</cpe></osclass>
+</osmatch>
+<osmatch name="Actiontec GT701 DSL modem" accuracy="92" line="1325">
+<osclass type="broadband router" vendor="Actiontec" osfamily="embedded" accuracy="92"><cpe>cpe:/h:actiontec:gt701</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.4.20" accuracy="90" line="45116">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:2.4.20</cpe></osclass>
+</osmatch>
+<osmatch name="DD-WRT v24-sp2 (Linux 2.4.36)" accuracy="90" line="46350">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:2.4.36</cpe></osclass>
+</osmatch>
+<osmatch name="DD-WRT v23 (Linux 2.4.36)" accuracy="90" line="46200">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:2.4.36</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.4.21 (embedded)" accuracy="90" line="45992">
+<osclass type="specialized" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:2.4.21</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.4.21" accuracy="90" line="45290">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:2.4.21</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 - 2.6.33" accuracy="89" line="56094">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="HP 4200 PSA (Print Server Appliance) model J4117A" accuracy="89" line="32215">
+<osclass type="print server" vendor="HP" osfamily="embedded" accuracy="89"/>
+</osmatch>
+<osmatch name="Check Point UTM-1 Edge X firewall" accuracy="88" line="13157">
+<osclass type="firewall" vendor="Check Point" osfamily="embedded" accuracy="88"/>
+</osmatch>
+</os>
+<uptime seconds="17335216" lastboot="Sat May 18 02:11:19 2024"/>
+<distance value="3"/>
+<tcpsequence index="201" difficulty="Good luck!" values="B0C03142,ABAF579A,759622EC,C6C1B5C0,4665CB73,693A7FE9"/>
+<ipidsequence class="Randomized" values="990C,D68C,157F,5560,9720,D898"/>
+<tcptssequence class="100HZ" values="67508C5D,675094B0,67509D03,6750A556,6750ADA9,6750B5FC"/>
+<trace port="1720" proto="tcp">
+<hop ttl="1" ipaddr="192.168.40.2" rtt="0.23" host="_gateway"/>
+<hop ttl="3" ipaddr="10.12.188.254" rtt="0.55"/>
+</trace>
+<times srtt="854" rttvar="323" to="400000"/>
+</host>
+<host starttime="1733274069" endtime="1733304695"><status state="up" reason="reset" reason_ttl="63"/>
+<address addr="10.12.188.255" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="985">
+<extrareasons reason="resets" count="985"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="135"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="254"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1007"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2021"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="servexec" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3333"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="dec-notes" method="table" conf="3"/></port>
+<port protocol="tcp" portid="7019"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="doceri-ctl" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10001"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="scp-config" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10009"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="swdtp-sv" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10010"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="rxapi" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10012"><state state="filtered" reason="host-unreach" reason_ttl="64"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="11967"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="sysinfo-sp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="20000"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="dnp" method="table" conf="3"/></port>
+</ports>
+<os><portused state="closed" proto="tcp" portid="1"/>
+</os>
+<distance value="3"/>
+<trace port="1025" proto="tcp">
+<hop ttl="1" ipaddr="192.168.40.2" rtt="0.23" host="_gateway"/>
+<hop ttl="3" ipaddr="10.12.188.255" rtt="0.58"/>
+</trace>
+<times srtt="657" rttvar="131" to="400000"/>
+</host>
+<postscript><script id="clock-skew" output="&#xa;  1s: &#xa;    10.12.188.73&#xa;    10.12.188.237&#xa;    10.12.188.242"><table key="1s">
+<elem>10.12.188.73</elem>
+<elem>10.12.188.237</elem>
+<elem>10.12.188.242</elem>
+</table>
+</script></postscript><runstats><finished time="1733304695" timestr="Wed Dec  4 17:31:35 2024" elapsed="30693.10" summary="Nmap done at Wed Dec  4 17:31:35 2024; 256 IP addresses (27 hosts up) scanned in 30693.10 seconds" exit="success"/><hosts up="27" down="229" total="256"/>
+</runstats>
+</nmaprun>

@@ -22,6 +22,19 @@ def main():
             ],
             os="Linux"
         )),
+        ("./xml/188.xml", Node(
+            node_id="192.168.40.193",
+            node_type="device",
+            state="up",
+            fqdn="unknown.local",
+            reverse_dns="unknown.local",
+            mac_address="00:00:00:00:00:00",
+            vendor="Unknown",
+            open_ports=[
+                {"port": 22, "protocol": "tcp", "service": "ssh", "version": None}
+            ],
+            os="Linux"
+        )),
         ("./xml/189.xml", Node(
             node_id="192.168.31.104",
             node_type="device",
