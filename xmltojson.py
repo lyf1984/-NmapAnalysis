@@ -68,10 +68,11 @@ class NmapParser:
         reverse_dns = ip_address  # 默认将 IP 作为反向 DNS
 
         # 获取操作系统信息
-        os_element = host.find("os-fingerprint")
+        os_element = host.find("os")
         os = "Unknown"
         if os_element is not None:
-            os = os_element.find("osmatch").get("name") if os_element.find("osmatch") is not None else "Unknown"
+            os_match = os_element.find("osmatch")
+            os = os_match.get("name") if os_match is not None else "Unknown"
 
         mac_element = host.find("address[@addrtype='mac']")
         mac_address = mac_element.get("addr") if mac_element is not None else "00:00:00:00:00:00"
@@ -139,7 +140,7 @@ class NmapParser:
 
 def main():
     # 输入 XML 文件路径
-    input_file = "./xml/189.xml"  # 替换为实际的 nmap 扫描结果文件路径
+    input_file = "./xml/126.xml"  # 替换为实际的 nmap 扫描结果文件路径
     output_file = "output.json"  # 输出 JSON 文件名
 
     # 创建解析器实例
