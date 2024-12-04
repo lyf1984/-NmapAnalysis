@@ -7,7 +7,6 @@ def main():
     """
     主函数，解析多个 Nmap XML 文件并保存为 JSON。
     """
-    # 输入多个 XML 文件路径及对应的 localhost 信息
     inputs = [
         ("./xml/126.xml", Node(
             node_id="10.12.189.18",
@@ -23,7 +22,33 @@ def main():
             ],
             os="Linux"
         )),
+        ("./xml/189.xml", Node(
+            node_id="192.168.31.104",
+            node_type="device",
+            state="up",
+            fqdn="unknown.local",
+            reverse_dns="unknown.local",
+            mac_address="00:00:00:00:00:00",
+            vendor="Unknown",
+            open_ports=[
+                {"port": 22, "protocol": "tcp", "service": "ssh", "version": None}
+            ],
+            os="Linux"
+        )),
         ("./xml/190.xml", Node(
+            node_id="192.168.40.193",
+            node_type="device",
+            state="up",
+            fqdn="unknown.local",
+            reverse_dns="unknown.local",
+            mac_address="00:00:00:00:00:00",
+            vendor="Unknown",
+            open_ports=[
+                {"port": 22, "protocol": "tcp", "service": "ssh", "version": None}
+            ],
+            os="Linux"
+        )),
+        ("./xml/191.xml", Node(
             node_id="192.168.40.193",
             node_type="device",
             state="up",
