@@ -8,7 +8,7 @@ class NmapParser:
     """
     Nmap XML 数据解析器。
 
-    该类用于解析 Nmap 生成的 XML 文件，并提取网络节点和边的信息。
+    用于解析 Nmap 生成的 XML 文件，并提取网络节点和边的信息。
     提取的信息包括节点的属性、开放端口列表，以及边的类型、协议和层级。
     """
 
@@ -24,8 +24,8 @@ class NmapParser:
         """
         self.nodes: list[Node] = []  # 存储 Node 实例的列表
         self.edges: list[Edge] = []  # 存储 Edge 实例的列表
-        self.added_edges: set[int] = set()  # 用于跟踪已添加的 Edge 哈希值，避免重复边
-        self.added_nodes: set[int] = set()  # 用于跟踪已添加的 Node 哈希值，避免重复节点
+        self.added_nodes: set[int] = set()  # 跟踪已添加的 Node，避免重复
+        self.added_edges: set[int] = set()  # 跟踪已添加的 Edge，避免重复
 
     def parse(self, file_path: str, localhost_node: Node) -> None:
         """
@@ -63,29 +63,18 @@ class NmapParser:
             输出 JSON 文件的路径。
         """
         try:
-            # 将 Node 和 Edge 对象转换为字典列表
+            # 转换为字典格式
             data = {
                 "nodes": [node.to_dict() for node in self.nodes],
                 "edges": [edge.to_dict() for edge in self.edges]
             }
 
-            # 写入 JSON 文件
+            # 保存为 JSON 文件
             with open(output_file, "w") as f:
                 json.dump(data, f, indent=4)
             print(f"数据成功保存到 {output_file}")
         except IOError as e:
             print(f"保存 JSON 文件失败: {e}")
-
-    def _add_localhost_node(self, localhost_info: Node) -> None:
-        """
-        动态添加或更新本机节点信息。
-
-        :param localhost_info: Node
-            表示 localhost 的 Node 实例。
-        """
-        if hash(localhost_info) not in self.added_nodes:
-            self.nodes.append(localhost_info)
-            self.added_nodes.add(hash(localhost_info))
 
     def _parse_host(self, host: ET.Element, localhost_node: Node) -> None:
         """
@@ -101,23 +90,20 @@ class NmapParser:
         ip_address = ip_element.get("addr") if ip_element is not None else "Unknown"
 
         # 检查是否已存在
-        node_hash = hash(ip_address)  # 使用 IP 地址计算哈希值
+        node_hash = hash(ip_address)
         if node_hash in self.added_nodes:
             return  # 避免重复添加节点
 
-        # 获取状态
+        # 获取主机状态
         state_element = host.find("status")
         state = state_element.get("state") if state_element is not None else "Unknown"
 
-        # 获取 FQDN
+        # 获取主机名
         fqdn = None
         hostnames_element = host.find("hostnames")
         if hostnames_element is not None:
             hostname = hostnames_element.find("hostname")
             fqdn = hostname.get("name") if hostname is not None else None
-
-        # 默认反向 DNS
-        reverse_dns = ip_address
 
         # 获取操作系统信息
         os = "Unknown"
@@ -127,21 +113,19 @@ class NmapParser:
             os = os_match.get("name") if os_match is not None else "Unknown"
 
         # 获取 MAC 地址
-        mac_address = "00:00:00:00:00:00"
         mac_element = host.find("address[@addrtype='mac']")
-        if mac_element is not None:
-            mac_address = mac_element.get("addr")
+        mac_address = mac_element.get("addr") if mac_element is not None else "00:00:00:00:00:00"
 
         # 提取开放端口信息
         open_ports = self._parse_ports(host)
 
-        # 创建 Node 对象
+        # 创建节点
         node = Node(
             node_id=ip_address,
             node_type="device",
             state=state,
             fqdn=fqdn,
-            reverse_dns=reverse_dns,
+            reverse_dns=ip_address,
             mac_address=mac_address,
             vendor="Unknown",
             open_ports=open_ports,
@@ -162,33 +146,19 @@ class NmapParser:
         :param host: ET.Element
             XML 主机节点。
         :return: list[dict]
-            包含端口信息的列表，格式为：
-            [
-                {
-                    "port": int,
-                    "protocol": str,
-                    "service": str,
-                    "version": Optional[str]
-                },
-                ...
-            ]
+            包含端口信息的列表。
         """
         open_ports = []
-
         for port in host.findall(".//port"):
-            port_id = port.get("portid")  # 获取端口号
-            protocol = port.get("protocol")  # 获取协议类型
-
-            # 获取端口状态
+            port_id = port.get("portid")
+            protocol = port.get("protocol")
             state_element = port.find("state")
             state = state_element.get("state") if state_element is not None else "unknown"
-
-            # 获取服务名称和版本
             service_element = port.find("service")
             service_name = service_element.get("name") if service_element is not None else "unknown"
             version = service_element.get("version") if service_element is not None else "unknown"
 
-            if state == "open":  # 仅记录开放的端口
+            if state == "open":
                 open_ports.append({
                     "port": int(port_id),
                     "protocol": protocol,
@@ -200,7 +170,7 @@ class NmapParser:
 
     def _parse_edges(self, host: ET.Element, localhost_node: Node) -> None:
         """
-        解析边信息，并将边添加到边列表中。
+        解析边信息，并处理丢失跳数和最后一跳的情况。
 
         :param host: ET.Element
             XML 主机节点。
@@ -208,16 +178,36 @@ class NmapParser:
             表示 localhost 的 Node 实例。
         """
         trace = host.find("trace")
+        target_ip = host.find("address").get("addr")
         if trace is not None:
-            # 初始设置为 localhost 节点的 ID
             prev_hop = localhost_node.node_id
+            prev_ttl = 0
+            last_hop_ip = None
 
-            # 遍历 trace 中的 hop
             for hop in trace.findall("hop"):
-                hop_ip = hop.get("ipaddr")  # 获取 hop 的 IP 地址
+                hop_ip = hop.get("ipaddr")
+                hop_ttl = int(hop.get("ttl", 0))
 
-                if hop_ip:  # 如果 hop IP 存在
-                    # 创建 Edge 实例
+                # 处理缺失跳数
+                while prev_ttl + 1 < hop_ttl:
+                    missing_ttl = hop_ttl - 1
+                    missing_hop_ip = f"pre-{prev_hop}-missing-ttl-{missing_ttl}"
+                    edge = Edge(
+                        from_node=prev_hop,
+                        to_node=missing_hop_ip,
+                        edge_type="traceroute",
+                        protocol="ICMP",
+                        layer="Layer 3"
+                    )
+                    if hash(edge) not in self.added_edges:
+                        self.edges.append(edge)
+                        self.added_edges.add(hash(edge))
+
+                    prev_hop = missing_hop_ip
+                    prev_ttl = missing_ttl
+
+                # 处理正常跳数
+                if hop_ip:
                     edge = Edge(
                         from_node=prev_hop,
                         to_node=hop_ip,
@@ -225,11 +215,23 @@ class NmapParser:
                         protocol="ICMP",
                         layer="Layer 3"
                     )
-
-                    # 检查是否已经存在此边
                     if hash(edge) not in self.added_edges:
                         self.edges.append(edge)
                         self.added_edges.add(hash(edge))
 
-                    # 更新 prev_hop 为当前 hop_ip
                     prev_hop = hop_ip
+                    prev_ttl = hop_ttl
+                    last_hop_ip = hop_ip
+
+            # 如果最后一跳不是目标主机，创建虚拟边
+            if last_hop_ip != target_ip:
+                edge = Edge(
+                    from_node=last_hop_ip or prev_hop,
+                    to_node=target_ip,
+                    edge_type="traceroute",
+                    protocol="ICMP",
+                    layer="Layer 3"
+                )
+                if hash(edge) not in self.added_edges:
+                    self.edges.append(edge)
+                    self.added_edges.add(hash(edge))
