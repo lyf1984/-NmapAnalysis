@@ -16,7 +16,7 @@
 | `node_id`     | `string` | 节点的唯一标识符，通常为 IP 地址、子网地址或主机名           | 是   | `"192.168.1.0/24"`      |
 | `node_type`   | `string` | 节点类型，可选值包括 `device`、`router` 或 `subnet`          | 是   | `"subnet"`              |
 | `state`       | `string` | 节点状态，例如 `up` 或 `down`（仅对设备或路由器节点有效）    | 否   | `"up"`                  |
-| `children`    | `array`  | 子节点的列表，表示子网内的设备或子网（仅对 `subnet` 类型节点有效） | 否   | `["192.168.1.10", ...]` |
+| ~~`children`~~    | ~~`array`~~  | ~~子节点的列表，表示子网内的设备或子网（仅对 `subnet` 类型节点有效）~~ | ~~否~~   | ~~`["192.168.1.10", ...]`~~ |
 | `fqdn`        | `string` | 完全限定域名（如果可用）                                     | 否   | `"example.com"`         |
 | `reverse_dns` | `string` | 反向 DNS（如果可用）                                         | 否   | `"server.example.com"`  |
 | `mac_address` | `string` | MAC 地址（如果可用）                                         | 否   | `"00:14:22:01:23:45"`   |
