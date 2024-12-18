@@ -8,7 +8,7 @@ def main():
     主函数，解析多个 Nmap XML 文件并保存为 JSON。
     """
     inputs = [
-        ("./xml/126.xml", Node(
+        ("./xml/222_20_126.xml", Node(
             node_id="10.12.189.18",
             node_type="device",
             state="up",
@@ -22,7 +22,7 @@ def main():
             ],
             os="Linux"
         )),
-        ("./xml/188.xml", Node(
+        ("./xml/10_12_188.xml", Node(
             node_id="192.168.40.193",
             node_type="device",
             state="up",
@@ -35,7 +35,7 @@ def main():
             ],
             os="Linux"
         )),
-        ("./xml/189.xml", Node(
+        ("./xml/10_12_189.xml", Node(
             node_id="192.168.31.104",
             node_type="device",
             state="up",
@@ -48,7 +48,7 @@ def main():
             ],
             os="Linux"
         )),
-        ("./xml/190.xml", Node(
+        ("./xml/10_12_190.xml", Node(
             node_id="192.168.40.193",
             node_type="device",
             state="up",
@@ -61,7 +61,7 @@ def main():
             ],
             os="Linux"
         )),
-        ("./xml/191.xml", Node(
+        ("./xml/10_12_191.xml", Node(
             node_id="192.168.40.193",
             node_type="device",
             state="up",
