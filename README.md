@@ -13,16 +13,17 @@
 
 | 字段名        | 数据类型 | 描述                                                         | 必需 | 示例                    |
 | ------------- | -------- | ------------------------------------------------------------ | ---- | ----------------------- |
-| `node_id`     | `string` | 节点的唯一标识符，通常为 IP 地址、子网地址或主机名           | 是   | `"192.168.1.0/24"`      |
+| `node_id`     | `string` | 唯一标识符，节点为 IP 地址，子网为算法生成的标识符 | 是   | `"192.168.1.0/24"`      |
 | `node_type`   | `string` | 节点类型，可选值包括 `device`、`router` 或 `subnet`          | 是   | `"subnet"`              |
 | `state`       | `string` | 节点状态，例如 `up` 或 `down`（仅对设备或路由器节点有效）    | 否   | `"up"`                  |
-| ~~`children`~~    | ~~`array`~~  | ~~子节点的列表，表示子网内的设备或子网（仅对 `subnet` 类型节点有效）~~ | ~~否~~   | ~~`["192.168.1.10", ...]`~~ |
+| `children`    | `array`  | 子节点的列表，表示子网内的设备或子网（仅对 `subnet` 类型节点有效） | 否   | `["192.168.1.10", ...]` |
 | `fqdn`        | `string` | 完全限定域名（如果可用）                                     | 否   | `"example.com"`         |
 | `reverse_dns` | `string` | 反向 DNS（如果可用）                                         | 否   | `"server.example.com"`  |
 | `mac_address` | `string` | MAC 地址（如果可用）                                         | 否   | `"00:14:22:01:23:45"`   |
 | `vendor`      | `string` | 设备供应商（如果可用）                                       | 否   | `"Cisco"`               |
 | `open_ports`  | `array`  | 开放端口列表（TCP/UDP）                                      | 否   | `[80, 443]`             |
 | `os`          | `string` | 操作系统（如果可用）                                         | 否   | `"Linux 4.15"`          |
+| `parent` | `string` | 节点的父母节点标识（如果存在） | 否 | "`subnet_1`" |
 
 #### **节点示例**
 
@@ -38,7 +39,8 @@
   "mac_address": "00:14:22:01:23:45",
   "vendor": "Cisco",
   "open_ports": [22, 80],
-  "os": "Linux 4.15"
+  "os": "Linux 4.15",
+  "parent":"subnet_1"
 }
 ```
 
@@ -54,7 +56,8 @@
   "mac_address": "00:25:64:3A:9B:02",
   "vendor": "Juniper",
   "open_ports": [80, 443],
-  "os": "JunOS 15.1"
+  "os": "JunOS 15.1",
+  "parent":"subnet_1"
 }
 ```
 
@@ -62,32 +65,9 @@
 
 ```
 {
-  "node_id": "192.168.1.0/24",
+  "node_id": "subnet_1",
   "node_type": "subnet",
-  "children": [
-    {
-      "node_id": "192.168.1.10",
-      "node_type": "device",
-      "state": "up",
-      "fqdn": "host1.example.com",
-      "reverse_dns": "host1.reverse.example.com",
-      "mac_address": "00:14:22:01:23:45",
-      "vendor": "Cisco",
-      "open_ports": [22, 80],
-      "os": "Linux 4.15"
-    },
-    {
-      "node_id": "192.168.1.20",
-      "node_type": "device",
-      "state": "down",
-      "fqdn": "host2.example.com",
-      "reverse_dns": "host2.reverse.example.com",
-      "mac_address": "00:14:22:01:23:46",
-      "vendor": "HP",
-      "open_ports": [443],
-      "os": "Windows 10"
-    }
-  ]
+  "children": ["192.168.1.1","subnet_2"]
 }
 ```
 
